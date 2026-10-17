@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  FreshGarant full logo (mark + wordmark) — placeholder.
+  Used wherever we want the brand name next to the icon.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" width="260" height="64" aria-label="FreshGarant">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B5E20"/>
+      <stop offset="1" stop-color="#43A047"/>
+    </linearGradient>
+    <linearGradient id="leaf2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#E8F5E9"/>
+    </linearGradient>
+  </defs>
+  <!-- Mark -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg2)"/>
+  <path d="M32 14 C 22 14, 14 22, 14 32 C 14 42, 24 50, 32 50 C 32 42, 32 30, 38 22 C 36 18, 34 15, 32 14 Z"
+        fill="url(#leaf2)"/>
+  <path d="M32 50 Q 29 38, 32 22" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <path d="M22 32 L 28 38 L 38 26" stroke="#2E7D32" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Wordmark -->
+  <text x="78" y="42"
+        font-family="'Inter', 'Segoe UI', system-ui, sans-serif"
+        font-size="28"
+        font-weight="800"
+        letter-spacing="-0.5"
+        fill="#1B5E20">FreshGarant</text>
+</svg>

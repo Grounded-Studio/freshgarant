@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  FreshGarant logo mark — placeholder.
+  Simple stylised leaf with a checkmark inside a rounded square, matching
+  the Flutter app's primary green. Replace with your definitive brand mark
+  when ready (keep the same filename so site code picks it up automatically).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" aria-label="FreshGarant">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B5E20"/>
+      <stop offset="1" stop-color="#43A047"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#E8F5E9"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg)"/>
+  <!-- Leaf shape -->
+  <path d="M32 14
+           C 22 14, 14 22, 14 32
+           C 14 42, 24 50, 32 50
+           C 32 42, 32 30, 38 22
+           C 36 18, 34 15, 32 14 Z"
+        fill="url(#leaf)"/>
+  <!-- Mid-rib -->
+  <path d="M32 50 Q 29 38, 32 22" stroke="#2E7D32" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <!-- Check mark inside leaf -->
+  <path d="M22 32 L 28 38 L 38 26" stroke="#2E7D32" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

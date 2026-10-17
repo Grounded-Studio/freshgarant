@@ -40,7 +40,10 @@ const navLinks = [
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="theme-color" content="#2E7D32" />
-    <link rel="icon" href="/images/favicon.ico" sizes="any" />
+    <!-- Modern browsers prefer SVG favicons (crisp at any size).
+         If you want legacy IE/Safari ≤11 support, generate a 32x32
+         favicon.ico from logo-mark.svg and uncomment the first line. -->
+    <!-- <link rel="icon" href="/images/favicon.ico" sizes="any" /> -->
     <link rel="icon" href="/images/logo-mark.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/images/logo-mark.svg" />
     <link rel="canonical" href={new URL(path, Astro.site).toString()} />
@@ -49,7 +52,12 @@ const navLinks = [
     <link rel="alternate" hreflang="x-default" href={new URL(enHref, Astro.site).toString()} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={new URL('/images/og-image.png', Astro.site).toString()} />
+    <!-- SVG works on most modern crawlers (Twitter, LinkedIn, WhatsApp).
+         Export og-image.svg to og-image.png (1200x630) and swap the path
+         here for maximum compatibility with older social scrapers. -->
+    <meta property="og:image" content={new URL('/images/og-image.svg', Astro.site).toString()} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:url" content={new URL(path, Astro.site).toString()} />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />

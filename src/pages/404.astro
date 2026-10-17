@@ -1,0 +1,36 @@
+---
+import Base from '~/layouts/Base.astro';
+import { t } from '~/i18n/strings';
+
+// 404 is language-agnostic — the user got here via a broken link so we
+// can't trust the URL to tell us their locale. Default to English and
+// link to both language homes.
+const lang = 'en';
+const s = t(lang);
+---
+<Base
+  lang={lang}
+  path="/404"
+  title="Page not found — FreshGarant"
+  description="The page you're looking for doesn't exist."
+>
+  <section class="section" style="min-height: 60vh; display: flex; align-items: center;">
+    <div class="container" style="text-align: center;">
+      <span class="section-kicker">404</span>
+      <h1 style="font-size: clamp(2.5rem, 6vw, 4.5rem); margin-bottom: 12px;">
+        Page not found
+      </h1>
+      <p class="section-sub" style="margin-left: auto; margin-right: auto;">
+        The link you followed is broken, outdated, or we moved something.
+        <br />
+        <span style="font-style: italic; color: var(--fg-text-faint);">
+          De link die je volgde is kapot, verouderd of we hebben iets verplaatst.
+        </span>
+      </p>
+      <div class="hero-ctas" style="justify-content: center; margin-top: 32px;">
+        <a href="/" class="btn btn-primary">← {s.nav.home} (English)</a>
+        <a href="/nl" class="btn btn-ghost">← Home (Nederlands)</a>
+      </div>
+    </div>
+  </section>
+</Base>

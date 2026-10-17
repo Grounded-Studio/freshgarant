@@ -1,0 +1,18 @@
+# Cloudflare Pages reads this file to set HTTP headers per path pattern.
+# Docs: https://developers.cloudflare.com/pages/configuration/headers/
+
+# Long cache for immutable asset files (fingerprinted at build time by Astro).
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images in /public/images/ change rarely — 1 week cache, must-revalidate
+# so Cloudflare re-checks when you push a new logo.
+/images/*
+  Cache-Control: public, max-age=604800, must-revalidate
+
+# Baseline security headers for everything else.
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
