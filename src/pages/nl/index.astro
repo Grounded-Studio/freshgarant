@@ -1,0 +1,123 @@
+---
+import Base from '~/layouts/Base.astro';
+import { t, PLAY_STORE_URL } from '~/i18n/strings';
+
+const lang = 'nl';
+const s = t(lang);
+---
+<Base
+  lang={lang}
+  path="/nl"
+  title="FreshGarant — Nooit meer eten weggooien"
+  description={s.home.heroLead}
+>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <span class="section-kicker">{s.home.heroKicker}</span>
+        <h1>{s.home.heroTitle}</h1>
+        <p class="lead">{s.home.heroLead}</p>
+        <div class="hero-ctas">
+          <a href={PLAY_STORE_URL} class="btn btn-primary" target="_blank" rel="noopener">
+            {s.home.ctaDownload} →
+          </a>
+          <a href="/nl/features" class="btn btn-ghost">{s.home.ctaSeeFeatures}</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>{s.home.stat1Value}</strong><span>{s.home.stat1Label}</span></div>
+          <div><strong>{s.home.stat2Value}</strong><span>{s.home.stat2Label}</span></div>
+          <div><strong>{s.home.stat3Value}</strong><span>{s.home.stat3Label}</span></div>
+        </div>
+      </div>
+      <div class="image-slot" style="min-height: 460px;">
+        {s.slot.heroPhones}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <span class="section-kicker">{s.home.featuresKicker}</span>
+      <h2 class="section-title">{s.home.featuresTitle}</h2>
+      <p class="section-sub">{s.home.featuresSub}</p>
+      <div class="grid grid-3 feature-grid">
+        <div class="feature-card">
+          <span class="emoji">{s.home.f1Emoji}</span>
+          <h3>{s.home.f1Title}</h3>
+          <p>{s.home.f1Body}</p>
+        </div>
+        <div class="feature-card">
+          <span class="emoji">{s.home.f2Emoji}</span>
+          <h3>{s.home.f2Title}</h3>
+          <p>{s.home.f2Body}</p>
+        </div>
+        <div class="feature-card">
+          <span class="emoji">{s.home.f3Emoji}</span>
+          <h3>{s.home.f3Title}</h3>
+          <p>{s.home.f3Body}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--fg-surface-alt);">
+    <div class="container">
+      <span class="section-kicker">{s.home.aiKicker}</span>
+      <h2 class="section-title">{s.home.aiTitle}</h2>
+      <p class="section-sub">{s.home.aiSub}</p>
+
+      <div class="grid grid-2" style="gap: 48px; align-items: center;">
+        <div>
+          <h3>{s.home.ai1Title} <span class="chip chip-pro">PRO</span></h3>
+          <p>{s.home.ai1Body}</p>
+        </div>
+        <div class="phone"><div class="image-slot">{s.slot.shotFridge}</div></div>
+      </div>
+
+      <div class="grid grid-2" style="gap: 48px; align-items: center; margin-top: 72px;">
+        <div class="phone" style="order: 1;"><div class="image-slot">{s.slot.shotReceipt}</div></div>
+        <div style="order: 2;">
+          <h3>{s.home.ai2Title} <span class="chip chip-pro">PRO</span></h3>
+          <p>{s.home.ai2Body}</p>
+        </div>
+      </div>
+
+      <div class="grid grid-2" style="gap: 48px; align-items: center; margin-top: 72px;">
+        <div>
+          <h3>{s.home.ai3Title} <span class="chip chip-pro">PRO</span></h3>
+          <p>{s.home.ai3Body}</p>
+        </div>
+        <div class="phone"><div class="image-slot">{s.slot.shotRecipes}</div></div>
+      </div>
+
+      <div class="grid grid-2" style="gap: 48px; align-items: center; margin-top: 72px;">
+        <div class="phone" style="order: 1;"><div class="image-slot">{s.slot.shotWeekplan}</div></div>
+        <div style="order: 2;">
+          <h3>{s.home.ai4Title} <span class="chip chip-pro">PRO</span></h3>
+          <p>{s.home.ai4Body}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <span class="section-kicker">{s.home.savingsKicker}</span>
+      <h2 class="section-title">{s.home.savingsTitle}</h2>
+      <p class="section-sub">{s.home.savingsSub}</p>
+      <a href="/nl/savings" class="btn btn-primary">{s.home.savingsCta} →</a>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="cta-band">
+        <h2>{s.home.finalCtaTitle}</h2>
+        <p>{s.home.finalCtaBody}</p>
+        <a href={PLAY_STORE_URL} class="btn btn-primary" target="_blank" rel="noopener">
+          {s.home.finalCtaBtn} →
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

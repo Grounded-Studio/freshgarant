@@ -1,0 +1,120 @@
+---
+import '~/styles/global.css';
+import { t, type Lang } from '~/i18n/strings';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  /** Current path for the active-nav highlight + hreflang alt. */
+  path: string;
+}
+
+const { lang, title, description, path } = Astro.props;
+const strings = t(lang);
+
+// Build hreflang alts: given current path like "/features", EN variant
+// is "/features" and NL variant is "/nl/features". Keeps Google happy
+// about cross-language canonicals.
+const stripNl = (p: string) => (p.startsWith('/nl') ? p.slice(3) || '/' : p);
+const cleanPath = stripNl(path);
+const enHref = cleanPath;
+const nlHref = cleanPath === '/' ? '/nl' : `/nl${cleanPath}`;
+
+const year = new Date().getFullYear();
+const copyright = strings.footer.copyright.replace('{year}', year.toString());
+
+// Nav items — rendered twice (header + footer), define once.
+const navLinks = [
+  { href: lang === 'nl' ? '/nl'           : '/',          label: strings.nav.home },
+  { href: lang === 'nl' ? '/nl/features'  : '/features',  label: strings.nav.features },
+  { href: lang === 'nl' ? '/nl/savings'   : '/savings',   label: strings.nav.savings },
+  { href: lang === 'nl' ? '/nl/download'  : '/download',  label: strings.nav.download },
+];
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#2E7D32" />
+    <link rel="icon" href="/images/favicon.ico" sizes="any" />
+    <link rel="icon" href="/images/logo-mark.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/images/logo-mark.svg" />
+    <link rel="canonical" href={new URL(path, Astro.site).toString()} />
+    <link rel="alternate" hreflang="en" href={new URL(enHref, Astro.site).toString()} />
+    <link rel="alternate" hreflang="nl" href={new URL(nlHref, Astro.site).toString()} />
+    <link rel="alternate" hreflang="x-default" href={new URL(enHref, Astro.site).toString()} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL('/images/og-image.png', Astro.site).toString()} />
+    <meta property="og:url" content={new URL(path, Astro.site).toString()} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a href={lang === 'nl' ? '/nl' : '/'} class="brand-mark" aria-label="FreshGarant home">
+          <img src="/images/logo-mark.svg" alt="" width="34" height="34" />
+          <span>FreshGarant</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          {navLinks.map((link) => (
+            <a href={link.href} class={path === link.href ? 'active' : ''}>{link.label}</a>
+          ))}
+          <div class="lang-switch" aria-label="Language">
+            <a href={enHref} class={lang === 'en' ? 'active' : ''}>EN</a>
+            <a href={nlHref} class={lang === 'nl' ? 'active' : ''}>NL</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand-mark" style="color: #fff;">
+              <img src="/images/logo-mark.svg" alt="" width="34" height="34" />
+              <span>FreshGarant</span>
+            </div>
+            <p class="footer-tagline">{strings.footer.tagline}</p>
+          </div>
+          <div class="footer-col">
+            <h4>{strings.footer.product}</h4>
+            <ul>
+              <li><a href={lang === 'nl' ? '/nl/features' : '/features'}>{strings.footer.links.features}</a></li>
+              <li><a href={lang === 'nl' ? '/nl/savings'  : '/savings'}>{strings.footer.links.savings}</a></li>
+              <li><a href={lang === 'nl' ? '/nl/download' : '/download'}>{strings.footer.links.download}</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>{strings.footer.legal}</h4>
+            <ul>
+              <li><a href={lang === 'nl' ? '/nl/privacy' : '/privacy'}>{strings.footer.links.privacy}</a></li>
+              <li><a href={lang === 'nl' ? '/nl/terms'   : '/terms'}>{strings.footer.links.terms}</a></li>
+              <li><a href={lang === 'nl' ? '/nl/contact' : '/contact'}>{strings.footer.links.contact}</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>{copyright}</span>
+          <span>freshgarant.app</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
