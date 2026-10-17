@@ -187,6 +187,81 @@ const en = {
     ctaBtn: 'Download FreshGarant',
   },
 
+  // ── Download page ────────────────────────────────────────────────────
+  download: {
+    heroKicker: 'DOWNLOAD',
+    heroTitle: 'Get FreshGarant on Android.',
+    heroLead:
+      'Free to install. No account needed. Scan your groceries and get your first useful inventory in under a minute.',
+    androidTitle: 'Google Play',
+    androidSub: 'Android 5.0 (Lollipop) and higher',
+    qrLabel: 'Scan to install',
+    comingSoonTitle: 'iPhone / iPad',
+    comingSoonBody:
+      'An iOS version is on the roadmap but not yet released. Join the waitlist via the contact page and we’ll let you know when it ships.',
+    inFreeTitle: 'In the free version',
+    inFreeItems: [
+      'Up to 40 tracked products',
+      'Unlimited barcode scanning',
+      'Daily expiry notifications',
+      'Freeze-it hints in the morning digest',
+      'Smart shopping list with "X in fridge" chip',
+      'Nearby-store alerts',
+      'Monthly savings tracking',
+      'Invite friends for free PRO months',
+    ],
+    inProTitle: 'What PRO adds',
+    inProItems: [
+      'Unlimited products',
+      'AI Fridge Scan (unlimited after trial)',
+      'AI Receipt Scan (unlimited after trial)',
+      'AI Recipes & AI Weekly Meal Plan',
+      'Cook Mode with per-step timers',
+      'Family sharing with shared pantry',
+      'Detailed statistics & savings insights',
+      'Calories & nutrition via barcode',
+    ],
+    oneTrial:
+      'Every free user gets one lifetime trial of every AI feature before any paywall.',
+  },
+
+  // ── Privacy policy ───────────────────────────────────────────────────
+  privacy: {
+    heroKicker: 'PRIVACY',
+    heroTitle: 'Privacy policy',
+    lastUpdated: 'Last updated: {date}',
+    intro:
+      'FreshGarant is built around one principle: your inventory is your business, not ours. Most of the app runs entirely on your device and never sees a server. This page explains exactly what does leave your phone, why, and what control you have.',
+  },
+
+  // ── Terms of service ────────────────────────────────────────────────
+  terms: {
+    heroKicker: 'TERMS',
+    heroTitle: 'Terms of service',
+    lastUpdated: 'Last updated: {date}',
+    intro:
+      'By installing or using FreshGarant you agree to these terms. They are deliberately short and plain-language — read them before you tap "I accept" anywhere.',
+  },
+
+  // ── Contact page ─────────────────────────────────────────────────────
+  contact: {
+    heroKicker: 'CONTACT',
+    heroTitle: 'Get in touch.',
+    heroLead:
+      'Bug? Feature idea? Business enquiry? One address handles everything — we usually reply within 2 working days.',
+    emailLabel: 'Email',
+    responseTitle: 'What to expect',
+    response: [
+      'Bug reports: we triage within 24h and respond with a timeline.',
+      'Feature requests: added to our roadmap, we reply with status.',
+      'Press / partnerships: reply within 1 working day.',
+      'Everything else: within 2 working days, usually faster.',
+    ],
+    tipTitle: 'For bug reports — one tap in the app',
+    tipBody:
+      'Open FreshGarant → Settings → Help → Send feedback. The email opens with your app version and platform pre-filled, which saves a round of back-and-forth.',
+  },
+
   slot: {
     heroPhones: 'hero-phones.png (3 phones mockup)',
     shotHome: 'shot-home.png',
@@ -198,6 +273,8 @@ const en = {
     shotStats: 'shot-stats.png',
     shotShopping: 'shot-shopping.png',
     calcIllustration: 'calc-illustration.png',
+    playBadge: 'play-store-badge-en.png',
+    qrCode: 'qr-play-store.png',
   },
 };
 
@@ -379,6 +456,77 @@ const nl: typeof en = {
     ctaBtn: 'Download FreshGarant',
   },
 
+  download: {
+    heroKicker: 'DOWNLOAD',
+    heroTitle: 'Download FreshGarant op Android.',
+    heroLead:
+      'Gratis te installeren. Geen account nodig. Scan je boodschappen en krijg je eerste bruikbare voorraad binnen een minuut.',
+    androidTitle: 'Google Play',
+    androidSub: 'Android 5.0 (Lollipop) en hoger',
+    qrLabel: 'Scan om te installeren',
+    comingSoonTitle: 'iPhone / iPad',
+    comingSoonBody:
+      'Een iOS-versie staat op de roadmap maar is nog niet uitgebracht. Meld je aan voor de wachtlijst via de contactpagina en we laten je weten zodra het er is.',
+    inFreeTitle: 'In de gratis versie',
+    inFreeItems: [
+      'Tot 40 getrackte producten',
+      'Onbeperkt barcodes scannen',
+      'Dagelijkse verval-meldingen',
+      'Freeze-it tips in de ochtend-digest',
+      'Slimme boodschappenlijst met "X in koelkast" chip',
+      'Melding bij winkel in de buurt',
+      'Maandelijkse besparingen bijhouden',
+      'Vrienden uitnodigen voor gratis PRO-maanden',
+    ],
+    inProTitle: 'Wat PRO toevoegt',
+    inProItems: [
+      'Onbeperkt producten',
+      'AI Koelkast-scan (onbeperkt na probeersel)',
+      'AI Kassabon-scan (onbeperkt na probeersel)',
+      'AI Recepten & AI Weekplanner',
+      'Kook-modus met timers per stap',
+      'Familie delen met gedeelde voorraad',
+      'Uitgebreide statistieken & besparing-inzichten',
+      'Calorieën & voeding via barcode',
+    ],
+    oneTrial:
+      'Elke free user krijgt één lifetime probeersel van elke AI-functie voor de paywall.',
+  },
+
+  privacy: {
+    heroKicker: 'PRIVACY',
+    heroTitle: 'Privacybeleid',
+    lastUpdated: 'Laatst bijgewerkt: {date}',
+    intro:
+      'FreshGarant is gebouwd rond één principe: jouw voorraad is jouw zaak, niet die van ons. Het grootste deel van de app draait volledig op je apparaat en bereikt nooit een server. Deze pagina legt precies uit wat er wél je telefoon verlaat, waarom, en welke controle jij hebt.',
+  },
+
+  terms: {
+    heroKicker: 'VOORWAARDEN',
+    heroTitle: 'Gebruiksvoorwaarden',
+    lastUpdated: 'Laatst bijgewerkt: {date}',
+    intro:
+      'Door FreshGarant te installeren of te gebruiken ga je akkoord met deze voorwaarden. Ze zijn bewust kort en in gewone taal — lees ze voordat je ergens op "Ik ga akkoord" tikt.',
+  },
+
+  contact: {
+    heroKicker: 'CONTACT',
+    heroTitle: 'Neem contact op.',
+    heroLead:
+      'Bug? Feature-idee? Zakelijke vraag? Eén adres voor alles — we reageren meestal binnen 2 werkdagen.',
+    emailLabel: 'E-mail',
+    responseTitle: 'Wat je kunt verwachten',
+    response: [
+      'Bug-rapporten: binnen 24u beoordeeld, antwoord met tijdlijn.',
+      'Feature-verzoeken: toegevoegd aan onze roadmap, antwoord met status.',
+      'Pers / partnerships: antwoord binnen 1 werkdag.',
+      'Al het andere: binnen 2 werkdagen, meestal sneller.',
+    ],
+    tipTitle: 'Voor bug-rapporten — één tik in de app',
+    tipBody:
+      'Open FreshGarant → Instellingen → Help → Feedback sturen. De e-mail opent met je app-versie en platform al ingevuld, dat scheelt een rondje heen-en-weer.',
+  },
+
   slot: {
     heroPhones: 'hero-phones.png (3 telefoons mockup)',
     shotHome: 'shot-home.png',
@@ -390,6 +538,8 @@ const nl: typeof en = {
     shotStats: 'shot-stats.png',
     shotShopping: 'shot-shopping.png',
     calcIllustration: 'calc-illustration.png',
+    playBadge: 'play-store-badge-nl.png',
+    qrCode: 'qr-play-store.png',
   },
 };
 

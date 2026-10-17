@@ -647,3 +647,132 @@ img { max-width: 100%; display: block; }
   font-size: 10.5px;
   font-weight: 700;
 }
+
+/* ── Download page ────────────────────────────────────────────────────── */
+.download-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 820px) {
+  .download-grid { grid-template-columns: 1.4fr 1fr; }
+}
+.download-card {
+  padding: 32px;
+  border-radius: var(--fg-radius-lg);
+  box-shadow: var(--fg-shadow-md);
+}
+.download-card-primary {
+  background: linear-gradient(135deg, var(--fg-primary-dark), var(--fg-primary));
+  color: #fff;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 540px) {
+  .download-card-primary { grid-template-columns: 1.4fr 1fr; align-items: center; }
+}
+.download-card-muted {
+  background: var(--fg-surface);
+  border: 1px solid rgba(27, 94, 32, 0.1);
+}
+.download-qr {
+  text-align: center;
+}
+.download-qr .image-slot {
+  min-height: 160px;
+  padding: 16px;
+}
+.download-qr small {
+  display: block;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.download-list {
+  padding-left: 0;
+  margin: 10px 0 0;
+  list-style: none;
+}
+.download-list li {
+  position: relative;
+  padding: 6px 0 6px 24px;
+  color: var(--fg-text);
+  font-size: 14.5px;
+}
+.download-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  color: var(--fg-primary);
+  font-weight: 800;
+}
+
+/* ── Legal pages (privacy, terms) — prose typography ──────────────── */
+.prose {
+  max-width: 760px;
+  margin-top: 20px;
+}
+.prose h2 {
+  font-size: 1.4rem;
+  margin: 40px 0 12px;
+  color: var(--fg-primary-dark);
+}
+.prose h2:first-child { margin-top: 0; }
+.prose h3 {
+  font-size: 1.1rem;
+  margin: 24px 0 8px;
+  color: var(--fg-text);
+}
+.prose p, .prose ul {
+  color: var(--fg-text);
+  font-size: 15px;
+  line-height: 1.65;
+}
+.prose ul {
+  padding-left: 22px;
+  margin: 0 0 1em;
+}
+.prose li { margin-bottom: 6px; }
+.prose a {
+  color: var(--fg-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose strong { color: var(--fg-primary-dark); }
+
+/* ── Contact page ─────────────────────────────────────────────────────── */
+.contact-card {
+  text-align: left;
+}
+.contact-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--fg-radius-md);
+  background: var(--fg-primary-50);
+  color: var(--fg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  margin-bottom: 16px;
+}
+.contact-email {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--fg-primary-dark);
+  padding: 10px 16px;
+  background: var(--fg-mint-bg);
+  border-radius: var(--fg-radius-md);
+  margin-top: 4px;
+  letter-spacing: -0.01em;
+  word-break: break-all;
+}
+.contact-email:hover {
+  background: var(--fg-primary-50);
+  text-decoration: none;
+}
