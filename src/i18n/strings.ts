@@ -8,7 +8,6 @@
 export type Lang = 'en' | 'nl';
 
 const en = {
-  // Nav
   nav: {
     home: 'Home',
     features: 'Features',
@@ -18,7 +17,6 @@ const en = {
     cta: 'Get the app',
   },
 
-  // Footer
   footer: {
     tagline: 'Scan your groceries. Cook what’s fresh. Never waste food again.',
     product: 'Product',
@@ -34,7 +32,6 @@ const en = {
     copyright: '© {year} Grounded Studio · Made with care in the Netherlands',
   },
 
-  // Home / Hero
   home: {
     heroKicker: 'AI-POWERED FOOD TRACKER',
     heroTitle: 'Never waste food again.',
@@ -88,7 +85,108 @@ const en = {
     finalCtaBtn: 'Download FreshGarant',
   },
 
-  // Image slot labels (visible when image is missing)
+  // ── Savings calculator page ──────────────────────────────────────────
+  savings: {
+    heroKicker: 'SAVINGS CALCULATOR',
+    heroTitle: 'How much could you save?',
+    heroLead:
+      'Tweak the sliders to match your household. We use conservative, published figures — no inflated marketing numbers.',
+
+    weeklySpendLabel: 'Weekly grocery spend',
+    wastePercentLabel: 'Of your groceries, how much do you throw away?',
+    wasteHint: 'Dutch household average: around 14%',
+
+    resultTitle: 'Your estimated savings with FreshGarant',
+    perMonth: 'per month',
+    perYear: 'per year',
+    co2Saved: 'kg CO₂ prevented per year',
+    co2Hint: 'Based on 2.5 kg CO₂-eq per kg of food waste (EPA average).',
+
+    currentWasteLabel: 'What you currently throw away',
+    newWasteLabel: 'With FreshGarant',
+
+    reductionNote:
+      'We assume a 50% reduction in food waste — the midpoint of studies on tracker-app users (range: 30–70%).',
+    sourcesTitle: 'Where the numbers come from',
+    sources: [
+      'Milieu Centraal — Dutch household food waste averages',
+      'EPA — greenhouse gas equivalents for food waste',
+      'Independent studies on inventory-tracking app effectiveness',
+    ],
+
+    ctaBand: 'Ready to start saving?',
+    ctaBtn: 'Download FreshGarant free',
+  },
+
+  // ── Features page ────────────────────────────────────────────────────
+  features: {
+    heroKicker: 'EVERY FEATURE',
+    heroTitle: 'Everything FreshGarant does.',
+    heroLead:
+      'A complete tour of the app. Free features in green, PRO features in gold — plus one lifetime trial for every AI feature.',
+
+    g1Title: 'Add groceries fast',
+    g1Items: [
+      { title: 'Barcode scanner', body: 'Auto-fills name, brand, category, storage, expiry.', pro: false },
+      { title: 'Receipt scan (AI)', body: 'Photograph a receipt → every item added at once.', pro: true, trial: true },
+      { title: 'Fridge scan (AI)', body: 'One photo of your fridge → Gemini detects every product.', pro: true, trial: true },
+      { title: 'Manual add with quick-fill', body: 'Common items as one-tap chips. Up to 40 free, unlimited with PRO.', pro: false },
+    ],
+
+    g2Title: 'Never miss expiry',
+    g2Items: [
+      { title: 'Morning digest push', body: 'One daily reminder of what expires today, tomorrow, this week.', pro: false },
+      { title: 'Freeze-it hints', body: 'Suggests freezing items that can still be saved.', pro: false },
+      { title: 'Expiry calendar', body: 'Month view with coloured dots per expiry status.', pro: false },
+      { title: 'Nearby-store alerts', body: 'Push when you’re near a saved supermarket with items on your list.', pro: false },
+    ],
+
+    g3Title: 'Use what you have',
+    g3Items: [
+      { title: 'Cook tab', body: 'Recipes matched to your real fridge, prioritising expiring items.', pro: false },
+      { title: 'AI Recipe generation', body: 'Gemini turns your inventory into a custom recipe on demand.', pro: true, trial: true },
+      { title: 'AI Weekly Meal Plan', body: 'A full 7-day dinner menu built around what you already have.', pro: true, trial: true },
+      { title: 'Cook Mode', body: 'Fullscreen recipe view with per-step timers, screen stays on.', pro: true },
+    ],
+
+    g4Title: 'See your impact',
+    g4Items: [
+      { title: 'Instant savings reward', body: '“🎉 €2.49 saved!” snackbar every time you use food in time.', pro: false },
+      { title: 'Monthly savings banner', body: 'What you saved this month, right on home.', pro: false },
+      { title: 'Statistics (on-time use, streaks, trends)', body: 'Full dashboard: waste cost, best month, categories.', pro: true },
+      { title: '18 achievements', body: 'Kitchen Master, AI Chef, Royal Streak and more.', pro: false },
+      { title: 'Year in Review', body: 'Spotify-style recap: money saved, CO₂ prevented, longest streak.', pro: false },
+    ],
+
+    g5Title: 'Smart shopping',
+    g5Items: [
+      { title: 'Smart shopping list', body: 'Auto-suggestions, duplicates merge, supermarket-aisle sort.', pro: false },
+      { title: '“X in fridge” chip', body: 'Shows how many of each item you already own — skip duplicates.', pro: false },
+      { title: 'Price-drop alerts', body: 'Push when a product you track drops 8%+ in price.', pro: false },
+      { title: 'Multi-store support', body: 'Save your supermarkets, split your list per store.', pro: false },
+    ],
+
+    g6Title: 'Together',
+    g6Items: [
+      { title: 'Family sharing', body: 'Realtime shared pantry — everyone sees the same products instantly.', pro: true },
+      { title: 'Shared shopping list', body: 'One list, all household members.', pro: true },
+      { title: 'Invite friends → PRO free', body: 'Both get 1 month PRO when they install via your code.', pro: false },
+    ],
+
+    g7Title: 'Nutrition & diets',
+    g7Items: [
+      { title: 'Calories & nutrition via barcode', body: 'Protein, carbs, fat, fibre, salt — via Open Food Facts.', pro: true },
+      { title: 'Dietary tags', body: 'Vegan, vegetarian, gluten-free, lactose-free alerts.', pro: false },
+    ],
+
+    freeLabel: 'FREE',
+    proLabel: 'PRO',
+    trialLabel: '1 free trial',
+
+    ctaTitle: 'Start with the free tier, upgrade when you need it.',
+    ctaBtn: 'Download FreshGarant',
+  },
+
   slot: {
     heroPhones: 'hero-phones.png (3 phones mockup)',
     shotHome: 'shot-home.png',
@@ -99,6 +197,7 @@ const en = {
     shotCalendar: 'shot-calendar.png',
     shotStats: 'shot-stats.png',
     shotShopping: 'shot-shopping.png',
+    calcIllustration: 'calc-illustration.png',
   },
 };
 
@@ -180,6 +279,106 @@ const nl: typeof en = {
     finalCtaBtn: 'Download FreshGarant',
   },
 
+  savings: {
+    heroKicker: 'BESPARINGS-CALCULATOR',
+    heroTitle: 'Hoeveel kan jij besparen?',
+    heroLead:
+      'Verschuif de sliders zodat ze bij jouw huishouden passen. We rekenen met conservatieve, gepubliceerde cijfers — geen opgeklopte marketing.',
+
+    weeklySpendLabel: 'Wekelijkse boodschappen-uitgaven',
+    wastePercentLabel: 'Hoeveel van je boodschappen gooi je weg?',
+    wasteHint: 'Nederlands huishouden gemiddeld: ongeveer 14%',
+
+    resultTitle: 'Jouw geschatte besparing met FreshGarant',
+    perMonth: 'per maand',
+    perYear: 'per jaar',
+    co2Saved: 'kg CO₂ voorkomen per jaar',
+    co2Hint: 'Gebaseerd op 2,5 kg CO₂-eq per kg voedselverspilling (EPA gemiddelde).',
+
+    currentWasteLabel: 'Wat je nu weggooit',
+    newWasteLabel: 'Met FreshGarant',
+
+    reductionNote:
+      'We rekenen met 50% minder voedselverspilling — het middenpunt van studies naar tracker-app gebruikers (bereik: 30–70%).',
+    sourcesTitle: 'Waar de cijfers vandaan komen',
+    sources: [
+      'Milieu Centraal — gemiddelde Nederlandse huishoud-voedselverspilling',
+      'EPA — broeikasgas-equivalenten voor voedselafval',
+      'Onafhankelijke studies naar effectiviteit van inventaris-tracker apps',
+    ],
+
+    ctaBand: 'Klaar om te beginnen met besparen?',
+    ctaBtn: 'Download FreshGarant gratis',
+  },
+
+  features: {
+    heroKicker: 'ALLE FUNCTIES',
+    heroTitle: 'Alles wat FreshGarant doet.',
+    heroLead:
+      'Een complete tour door de app. Gratis functies in groen, PRO-functies in goud — plus één lifetime probeersel voor elke AI-functie.',
+
+    g1Title: 'Boodschappen snel toevoegen',
+    g1Items: [
+      { title: 'Barcode-scanner', body: 'Vult naam, merk, categorie, opslag en vervaldatum automatisch in.', pro: false },
+      { title: 'Kassabon-scan (AI)', body: 'Fotografeer een kassabon → alle items in één keer toegevoegd.', pro: true, trial: true },
+      { title: 'Koelkast-scan (AI)', body: 'Eén foto van je koelkast → Gemini herkent elk product.', pro: true, trial: true },
+      { title: 'Handmatig met snelkeuze', body: 'Veelvoorkomende items als one-tap chips. Tot 40 gratis, onbeperkt met PRO.', pro: false },
+    ],
+
+    g2Title: 'Mis nooit meer een vervaldatum',
+    g2Items: [
+      { title: 'Ochtend-digest push', body: 'Eén dagelijkse herinnering van wat vandaag, morgen, deze week verloopt.', pro: false },
+      { title: 'Freeze-it tips', body: 'Stelt voor items te bevriezen die je nog kan redden.', pro: false },
+      { title: 'Vervalkalender', body: 'Maandoverzicht met gekleurde stippen per verval-status.', pro: false },
+      { title: 'Melding bij winkel in buurt', body: 'Push als je in de buurt bent van een opgeslagen supermarkt met items op je lijst.', pro: false },
+    ],
+
+    g3Title: 'Gebruik wat je al hebt',
+    g3Items: [
+      { title: 'Kook-tab', body: 'Recepten gematcht met je echte koelkast, met voorrang voor bijna-verlopende items.', pro: false },
+      { title: 'AI Recept-generatie', body: 'Gemini maakt on-demand een persoonlijk recept van je voorraad.', pro: true, trial: true },
+      { title: 'AI Weekplanner', body: 'Een compleet 7-daags avondeten-menu rond wat je al hebt.', pro: true, trial: true },
+      { title: 'Kook-modus', body: 'Fullscreen recept-weergave met timers per stap, scherm blijft aan.', pro: true },
+    ],
+
+    g4Title: 'Zie je impact',
+    g4Items: [
+      { title: 'Directe bespaar-beloning', body: '“🎉 €2,49 bespaard!” snackbar elke keer dat je eten op tijd gebruikt.', pro: false },
+      { title: 'Maandelijkse besparing-banner', body: 'Wat je deze maand bespaarde, direct op home.', pro: false },
+      { title: 'Statistieken (on-time, streaks, trends)', body: 'Volledig dashboard: verspillingskosten, beste maand, categorieën.', pro: true },
+      { title: '18 prestaties', body: 'Keukenmeester, AI Chef, Royal Streak en meer.', pro: false },
+      { title: 'Jaaroverzicht', body: 'Spotify-stijl recap: bespaard geld, CO₂ voorkomen, langste streak.', pro: false },
+    ],
+
+    g5Title: 'Slim winkelen',
+    g5Items: [
+      { title: 'Slimme boodschappenlijst', body: 'Automatische suggesties, dubbele items voegen samen, sorteer op supermarkt-gangpad.', pro: false },
+      { title: '“X in koelkast” chip', body: 'Toont hoeveel je al hebt van elk item — geen dubbele boodschappen.', pro: false },
+      { title: 'Prijs-daal meldingen', body: 'Push als een product dat je volgt 8%+ in prijs zakt.', pro: false },
+      { title: 'Multi-store support', body: 'Sla je supermarkten op, verdeel je lijst per winkel.', pro: false },
+    ],
+
+    g6Title: 'Samen',
+    g6Items: [
+      { title: 'Familie delen', body: 'Realtime gedeelde voorraad — iedereen ziet dezelfde producten direct.', pro: true },
+      { title: 'Gedeelde boodschappenlijst', body: 'Eén lijst, alle huisgenoten.', pro: true },
+      { title: 'Vrienden uitnodigen → PRO gratis', body: 'Beide krijgen 1 maand PRO als ze installeren via jouw code.', pro: false },
+    ],
+
+    g7Title: 'Voeding & diëten',
+    g7Items: [
+      { title: 'Calorieën & voeding via barcode', body: 'Eiwit, koolhydraten, vet, vezels, zout — via Open Food Facts.', pro: true },
+      { title: 'Dieet-tags', body: 'Vegan, vegetarisch, glutenvrij, lactosevrij meldingen.', pro: false },
+    ],
+
+    freeLabel: 'GRATIS',
+    proLabel: 'PRO',
+    trialLabel: '1 gratis probeersel',
+
+    ctaTitle: "Begin gratis, upgrade wanneer je 't nodig hebt.",
+    ctaBtn: 'Download FreshGarant',
+  },
+
   slot: {
     heroPhones: 'hero-phones.png (3 telefoons mockup)',
     shotHome: 'shot-home.png',
@@ -190,6 +389,7 @@ const nl: typeof en = {
     shotCalendar: 'shot-calendar.png',
     shotStats: 'shot-stats.png',
     shotShopping: 'shot-shopping.png',
+    calcIllustration: 'calc-illustration.png',
   },
 };
 

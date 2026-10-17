@@ -1,0 +1,71 @@
+---
+import Base from '~/layouts/Base.astro';
+import { t, PLAY_STORE_URL } from '~/i18n/strings';
+
+const lang = 'nl';
+const s = t(lang);
+
+const groups = [
+  { title: s.features.g1Title, items: s.features.g1Items },
+  { title: s.features.g2Title, items: s.features.g2Items },
+  { title: s.features.g3Title, items: s.features.g3Items },
+  { title: s.features.g4Title, items: s.features.g4Items },
+  { title: s.features.g5Title, items: s.features.g5Items },
+  { title: s.features.g6Title, items: s.features.g6Items },
+  { title: s.features.g7Title, items: s.features.g7Items },
+];
+---
+<Base
+  lang={lang}
+  path="/nl/features"
+  title="Functies — FreshGarant"
+  description={s.features.heroLead}
+>
+  <section class="section">
+    <div class="container">
+      <span class="section-kicker">{s.features.heroKicker}</span>
+      <h1>{s.features.heroTitle}</h1>
+      <p class="section-sub">{s.features.heroLead}</p>
+
+      <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px;">
+        <span class="badge-free">{s.features.freeLabel}</span>
+        <span class="badge-pro">{s.features.proLabel}</span>
+        <span class="badge-trial">{s.features.trialLabel}</span>
+      </div>
+
+      {groups.map((g) => (
+        <div class="feat-group">
+          <h2>{g.title}</h2>
+          <div class="feat-items">
+            {g.items.map((item) => (
+              <div class="feat-item">
+                <div class="feat-item-head">
+                  <h3>{item.title}</h3>
+                  {item.pro
+                    ? <span class="badge-pro">{s.features.proLabel}</span>
+                    : <span class="badge-free">{s.features.freeLabel}</span>
+                  }
+                  {'trial' in item && item.trial && (
+                    <span class="badge-trial">{s.features.trialLabel}</span>
+                  )}
+                </div>
+                <p>{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="cta-band">
+        <h2>{s.features.ctaTitle}</h2>
+        <a href={PLAY_STORE_URL} class="btn btn-primary" target="_blank" rel="noopener">
+          {s.features.ctaBtn} →
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>
