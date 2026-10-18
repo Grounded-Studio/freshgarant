@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Savings calculator — FreshGarant</title>
+<meta name="description" content="Tweak the sliders. We estimate what FreshGarant could realistically save you — based on published figures, not inflated marketing numbers." />
+<meta name="theme-color" content="#2E7D32" />
+<link rel="icon" href="/images/logo-mark.svg" type="image/svg+xml" />
+<link rel="canonical" href="https://freshgarant.app/savings.html" />
+<link rel="alternate" hreflang="en" href="https://freshgarant.app/savings.html" />
+<link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/savings.html" />
+<meta property="og:title" content="Savings calculator — FreshGarant" />
+<meta property="og:image" content="https://freshgarant.app/images/og-image.svg" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+<link rel="stylesheet" href="/assets/css/global.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand-mark"><img src="/images/logo-mark.svg" alt="" width="34" height="34" /><span>FreshGarant</span></a>
+    <nav class="site-nav">
+      <a href="/">Home</a>
+      <a href="/features.html">Features</a>
+      <a href="/savings.html" class="active">Savings</a>
+      <a href="/download.html">Download</a>
+      <div class="lang-switch">
+        <a href="/savings.html" class="active">EN</a>
+        <a href="/nl/savings.html">NL</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <div class="container">
+    <span class="section-kicker">SAVINGS CALCULATOR</span>
+    <h1>How much could you save?</h1>
+    <p class="section-sub">Tweak the sliders to match your household. We use conservative, published figures — no inflated marketing numbers.</p>
+
+    <div class="calc-shell" data-lang="en">
+      <div class="calc-inputs">
+        <label class="calc-field">
+          <span class="calc-field-label">Weekly grocery spend</span>
+          <span class="calc-field-value" data-calc-out="weekly">€80</span>
+          <input type="range" min="20" max="300" step="5" value="80" data-calc="weekly" aria-label="Weekly grocery spend" />
+          <div class="calc-ticks"><span>€20</span><span>€300</span></div>
+        </label>
+        <label class="calc-field">
+          <span class="calc-field-label">Of your groceries, how much do you throw away?</span>
+          <span class="calc-field-value" data-calc-out="waste">14%</span>
+          <input type="range" min="5" max="40" step="1" value="14" data-calc="waste" aria-label="Waste percent" />
+          <div class="calc-ticks"><span>5%</span><span>40%</span></div>
+          <small class="calc-hint">Dutch household average: around 14%</small>
+        </label>
+      </div>
+
+      <div class="calc-result">
+        <span class="calc-result-kicker">Your estimated savings with FreshGarant</span>
+        <div class="calc-big-number"><span data-calc-out="monthly">€24</span><span class="calc-period"> / per month</span></div>
+        <div class="calc-yearly"><span data-calc-out="yearly">€291</span> <span>per year</span></div>
+
+        <div class="calc-bars">
+          <div class="calc-bar">
+            <div class="calc-bar-label"><span>What you currently throw away</span><strong data-calc-out="currentWaste">€48</strong></div>
+            <div class="calc-bar-track"><div class="calc-bar-fill calc-bar-fill-red" data-calc-bar="current" style="width:100%"></div></div>
+          </div>
+          <div class="calc-bar">
+            <div class="calc-bar-label"><span>With FreshGarant</span><strong data-calc-out="newWaste">€24</strong></div>
+            <div class="calc-bar-track"><div class="calc-bar-fill calc-bar-fill-green" data-calc-bar="new" style="width:50%"></div></div>
+          </div>
+        </div>
+
+        <div class="calc-co2">
+          <span class="calc-co2-value" data-calc-out="co2">180</span>
+          <span>kg CO₂ prevented per year</span>
+          <small>Based on 2.5 kg CO₂-eq per kg of food waste (EPA average).</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top: 40px;">
+      <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Where the numbers come from</h3>
+      <p style="color: var(--fg-text-muted); font-size: 14px; margin-bottom: 14px;">We assume a 50% reduction in food waste — the midpoint of studies on tracker-app users (range: 30–70%).</p>
+      <ul style="padding-left: 20px; color: var(--fg-text-muted); font-size: 14px; margin: 0;">
+        <li>Milieu Centraal — Dutch household food waste averages</li>
+        <li>EPA — greenhouse gas equivalents for food waste</li>
+        <li>Independent studies on inventory-tracking app effectiveness</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-band">
+      <h2>Ready to start saving?</h2>
+      <a href="https://play.google.com/store/apps/details?id=nl.versgarant.versgarant" class="btn btn-primary" target="_blank" rel="noopener">Download FreshGarant free →</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="brand-mark" style="color: #fff;"><img src="/images/logo-mark.svg" alt="" width="34" height="34" /><span>FreshGarant</span></div><p class="footer-tagline">Scan your groceries. Cook what's fresh. Never waste food again.</p></div>
+      <div class="footer-col"><h4>Product</h4><ul><li><a href="/features.html">Features</a></li><li><a href="/savings.html">Savings calculator</a></li><li><a href="/download.html">Download</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="/privacy.html">Privacy</a></li><li><a href="/terms.html">Terms</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Grounded Studio · Made with care in the Netherlands</span><span>freshgarant.app</span></div>
+  </div>
+</footer>
+
+<script src="/assets/js/savings-calc.js" defer></script>
+</body>
+</html>
