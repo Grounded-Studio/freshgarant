@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://freshgarant.app/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/features.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/features.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/features.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/savings.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/savings.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/savings.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/download.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/download.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/download.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/contact.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/contact.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/contact.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/privacy.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/terms.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/terms.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/terms.html" />
+  </url>
+
+  <url>
+    <loc>https://freshgarant.app/nl/</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/features.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/features.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/features.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/savings.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/savings.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/savings.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/download.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/download.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/download.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/contact.html</loc>
+    <lastmod>2026-10-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/contact.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/contact.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/privacy.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/privacy.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/terms.html</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/terms.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/terms.html" />
+  </url>
+
+</urlset>

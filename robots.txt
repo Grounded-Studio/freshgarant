@@ -1,4 +1,5 @@
 # Allow all search engines to crawl everything.
-# Google will discover pages via internal links; no explicit sitemap for now.
 User-agent: *
 Allow: /
+
+Sitemap: https://freshgarant.app/sitemap.xml
