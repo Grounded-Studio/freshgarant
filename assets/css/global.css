@@ -240,6 +240,71 @@ img { max-width: 100%; display: block; }
 .hero-stats { display: flex; gap: 28px; flex-wrap: wrap; font-size: 13px; color: var(--fg-text-muted); }
 .hero-stats strong { display: block; color: var(--fg-primary-dark); font-size: 22px; font-weight: 800; }
 
+/* Hero triptych — 3 phones fanned out, center phone forward */
+.hero-visual {
+  position: relative;
+  display: flex; justify-content: center; align-items: center;
+  min-height: 560px;
+}
+.hero-triptych {
+  position: relative;
+  width: 100%; max-width: 560px;
+  aspect-ratio: 1 / 1;
+  display: flex; justify-content: center; align-items: center;
+}
+.hero-triptych .tphone {
+  position: absolute;
+  width: 48%;
+  aspect-ratio: 9 / 19.5;
+  border-radius: 28px;
+  overflow: hidden;
+  background: #0A1F12;
+  border: 3px solid #ffffff;
+  box-shadow:
+    0 20px 50px -10px rgba(27, 94, 32, 0.35),
+    0 6px 18px -4px rgba(15, 23, 42, 0.15),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.hero-triptych .tphone img,
+.hero-triptych .tphone .image-slot {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  border-radius: 0; min-height: 0; margin: 0;
+  border: none;
+}
+.hero-triptych .tphone-left {
+  transform: translateX(-62%) translateY(14px) rotate(-9deg);
+  z-index: 1;
+}
+.hero-triptych .tphone-right {
+  transform: translateX(62%) translateY(14px) rotate(9deg);
+  z-index: 1;
+}
+.hero-triptych .tphone-center {
+  transform: translateY(-10px) scale(1.08);
+  z-index: 2;
+  box-shadow:
+    0 32px 60px -12px rgba(46, 125, 50, 0.28),
+    0 16px 32px -8px rgba(67, 160, 71, 0.18),
+    0 8px 20px -4px rgba(15, 23, 42, 0.25),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+.hero-triptych:hover .tphone-left  { transform: translateX(-68%) translateY(10px) rotate(-11deg); }
+.hero-triptych:hover .tphone-right { transform: translateX(68%) translateY(10px) rotate(11deg); }
+.hero-triptych:hover .tphone-center { transform: translateY(-16px) scale(1.10); }
+
+@media (max-width: 900px) {
+  .hero-visual { min-height: auto; margin-top: 24px; }
+  .hero-triptych { max-width: 440px; }
+}
+@media (max-width: 520px) {
+  .hero-triptych { max-width: 360px; }
+  .hero-triptych .tphone-left  { transform: translateX(-58%) translateY(10px) rotate(-7deg); }
+  .hero-triptych .tphone-right { transform: translateX(58%) translateY(10px) rotate(7deg); }
+  .hero-triptych .tphone-center { transform: translateY(-6px) scale(1.05); }
+}
+
 /* Feature cards */
 .feature-grid { gap: 20px; }
 .feature-card {
