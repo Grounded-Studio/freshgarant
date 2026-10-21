@@ -309,6 +309,16 @@ img { max-width: 100%; display: block; }
   .hero-triptych .tphone-center { transform: translateY(-6px) scale(1.05); }
 }
 
+/* Savings page hero (title + illustration side by side) */
+.savings-hero { display: grid; gap: 24px; align-items: center; margin-bottom: 32px; }
+.savings-hero .section-kicker { margin-bottom: 10px; display: inline-block; }
+.savings-hero h1 { margin-bottom: 16px; }
+.savings-hero .section-sub { margin: 0; }
+.savings-hero-img { width: 100%; max-width: 220px; height: auto; display: block; margin: 0 auto; }
+@media (min-width: 760px) {
+  .savings-hero { grid-template-columns: minmax(0, 1fr) 220px; gap: 40px; }
+}
+
 /* Feature cards */
 .feature-grid { gap: 20px; }
 .feature-card {
