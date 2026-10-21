@@ -439,30 +439,30 @@ img { max-width: 100%; display: block; }
 @media (min-width: 720px) { .feat-items { grid-template-columns: repeat(2, 1fr); } }
 
 /* Feature group with a side screenshot */
-.feat-group.has-shot { margin-top: 72px; }
+.feat-group.has-shot { margin-top: 48px; }
 @media (min-width: 960px) {
   .feat-group.has-shot {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 260px;
-    gap: 56px;
-    align-items: center;
+    grid-template-columns: minmax(0, 1fr) 210px;
+    gap: 36px;
+    align-items: start;
   }
   .feat-group.has-shot.flip > .feat-body { order: 2; }
-  .feat-group.has-shot .feat-items { grid-template-columns: 1fr; }
+  .feat-group.has-shot .feat-items { grid-template-columns: repeat(2, 1fr); }
 }
 .feat-shot {
   background: #0A1F12;
-  border-radius: 36px;
-  padding: 10px;
+  border-radius: 30px;
+  padding: 7px;
   box-shadow: var(--fg-shadow-lg);
-  max-width: 260px;
-  margin: 24px auto 0;
+  max-width: 210px;
+  margin: 16px auto 0;
 }
 .feat-shot img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 28px;
+  border-radius: 23px;
   aspect-ratio: 9 / 19.5;
   object-fit: cover;
 }
