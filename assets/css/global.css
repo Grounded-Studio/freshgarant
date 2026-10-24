@@ -193,6 +193,22 @@ img { max-width: 100%; display: block; }
 .lang-switch a { padding: 5px 11px; border-radius: var(--fg-radius-pill); color: var(--fg-text-muted); }
 .lang-switch a.active { background: var(--fg-primary); color: #fff; }
 .lang-switch a:hover { text-decoration: none; }
+/* Phones: the nav doesn't fit beside the logo and was stretching every page
+   wider than the screen. Drop it to its own row; if it still doesn't fit
+   (very narrow screens) it scrolls sideways instead of breaking the layout. */
+@media (max-width: 720px) {
+  .site-header .container { flex-wrap: wrap; row-gap: 8px; padding-top: 10px; padding-bottom: 8px; }
+  .site-nav {
+    width: 100%; justify-content: space-between; gap: 14px;
+    overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .site-nav::-webkit-scrollbar { display: none; }
+  .site-nav a { font-size: 13.5px; white-space: nowrap; }
+  /* The logo already links home — drop the separate Home link so the
+     language switch fits on narrow phones. */
+  .site-nav > a:first-child { display: none; }
+  .lang-switch { flex-shrink: 0; }
+}
 .brand-mark {
   display: inline-flex;
   align-items: center;
@@ -554,19 +570,47 @@ img { max-width: 100%; display: block; }
 .prose a { color: var(--fg-primary); text-decoration: underline; text-underline-offset: 2px; }
 .prose strong { color: var(--fg-primary-dark); }
 
-/* Contact */
-.contact-card { text-align: left; }
-.contact-icon {
-  width: 56px; height: 56px;
-  border-radius: var(--fg-radius-md);
-  background: var(--fg-primary-50); color: var(--fg-primary);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 26px; margin-bottom: 16px;
+/* Contact — form left, info cards right */
+.contact-layout { display: grid; gap: 24px; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 900px) { .contact-layout { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); } }
+.form-panel h2 { font-size: 1.4rem; margin: 0 0 20px; }
+.field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; min-width: 0; }
+.field-row { display: grid; gap: 0 16px; grid-template-columns: 1fr; }
+@media (min-width: 600px) { .field-row { grid-template-columns: 1fr 1fr; } }
+.field label { font-size: 13px; font-weight: 700; color: var(--fg-text); }
+.field input, .field select, .field textarea {
+  font: inherit; font-size: 15px; color: var(--fg-text);
+  background: var(--fg-mint-bg);
+  border: 1.5px solid rgba(27, 94, 32, 0.12);
+  border-radius: var(--fg-radius-sm);
+  padding: 12px 14px; width: 100%;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
-.contact-email {
-  display: inline-block; font-size: 20px; font-weight: 700;
-  color: var(--fg-primary-dark); padding: 10px 16px;
-  background: var(--fg-mint-bg); border-radius: var(--fg-radius-md);
-  margin-top: 4px; letter-spacing: -0.01em; word-break: break-all;
+.field textarea { resize: vertical; min-height: 140px; }
+.field input::placeholder, .field textarea::placeholder { color: var(--fg-text-faint); }
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: none; background: #fff;
+  border-color: var(--fg-primary);
+  box-shadow: 0 0 0 4px var(--fg-primary-50);
 }
-.contact-email:hover { background: var(--fg-primary-50); text-decoration: none; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.form-status { display: none; padding: 12px 14px; border-radius: var(--fg-radius-sm); font-size: 14px; margin-bottom: 16px; }
+.form-status.show { display: block; }
+.form-status.ok { background: rgba(46, 125, 50, 0.12); color: var(--fg-primary-dark); }
+.form-status.err { background: rgba(198, 40, 40, 0.10); color: var(--fg-accent-red); }
+.form-foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; }
+.form-note { margin: 0; font-size: 12.5px; color: var(--fg-text-faint); max-width: 320px; }
+#sendBtn:disabled { opacity: 0.6; cursor: wait; }
+.contact-side { display: flex; flex-direction: column; gap: 16px; }
+.side-card p { margin: 0; color: var(--fg-text-muted); font-size: 14px; line-height: 1.55; }
+.side-card .download-list { margin-top: 0; }
+.side-card .download-list li { font-size: 14px; }
+.side-label { font-size: 11.5px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--fg-primary); margin-bottom: 8px; }
+.mail-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 12px; }
+.mail-addr { font-weight: 700; color: var(--fg-primary-dark); word-break: break-all; }
+.copy-btn {
+  font: inherit; font-size: 12.5px; font-weight: 700; cursor: pointer;
+  color: var(--fg-primary); background: var(--fg-primary-50);
+  border: none; border-radius: var(--fg-radius-pill); padding: 6px 12px;
+}
+.copy-btn:hover { background: var(--fg-primary-100); }

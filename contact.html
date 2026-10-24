@@ -3,21 +3,24 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Contact — FreshGarant</title>
-<meta name="description" content="Bug? Feature idea? Business enquiry? One address handles everything — we usually reply within 2 working days." />
+<title>Contact FreshGarant — Questions, Bugs &amp; Feedback</title>
+<meta name="description" content="Question, bug report or feature idea for FreshGarant? Send us a message straight from this page — we usually reply within 2 working days." />
 <meta name="theme-color" content="#2E7D32" />
 <link rel="icon" type="image/png" sizes="64x64" href="/assets/icons/icon_favicon_64.png" />
 <link rel="apple-touch-icon" sizes="512x512" href="/assets/icons/icon_512.png" />
 <link rel="canonical" href="https://freshgarant.app/contact.html" />
 <link rel="alternate" hreflang="en" href="https://freshgarant.app/contact.html" />
 <link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/contact.html" />
-<meta property="og:title" content="Contact — FreshGarant" />
+<meta property="og:title" content="Contact FreshGarant — Questions, Bugs &amp; Feedback" />
+<meta property="og:description" content="Send us a message straight from this page — we usually reply within 2 working days." />
 <meta property="og:image" content="https://freshgarant.app/assets/images/og-image.png" />
 <meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="FreshGarant" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-<link rel="stylesheet" href="/assets/css/global.css?v=2026102402" />
+<link rel="stylesheet" href="/assets/css/global.css?v=2026102404" />
 </head>
 <body>
 <header class="site-header"><div class="container">
@@ -30,25 +33,70 @@
   <div class="container">
     <span class="section-kicker">CONTACT</span>
     <h1>Get in touch.</h1>
-    <p class="section-sub">Bug? Feature idea? Business enquiry? One address handles everything — we usually reply within 2 working days.</p>
+    <p class="section-sub">Question, bug or feature idea? Send us a message right here — it goes straight to our inbox, no mail app needed.</p>
 
-    <div class="grid grid-2" style="gap: 32px; align-items: start;">
-      <div class="card contact-card">
-        <div class="contact-icon">✉</div>
-        <h3>Email</h3>
-        <a href="mailto:contact@grounded-studio.app?subject=FreshGarant" class="contact-email">contact@grounded-studio.app</a>
-        <p style="color: var(--fg-text-muted); font-size: 14px; margin-top: 20px; margin-bottom: 0;"><strong>For bug reports — one tap in the app</strong></p>
-        <p style="color: var(--fg-text-muted); font-size: 13.5px; margin-top: 4px;">Open FreshGarant → Settings → Help → Send feedback. The email opens with your app version and platform pre-filled, which saves a round of back-and-forth.</p>
+    <div class="contact-layout">
+      <div class="card form-panel">
+        <h2>Send a message</h2>
+        <form id="contactForm" data-lang="en" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="Jane Jansen" />
+            </div>
+            <div class="field">
+              <label for="f-email">Email address</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-topic">Topic</label>
+            <select id="f-topic" name="topic">
+              <option value="Question">Question</option>
+              <option value="Bug report">Bug report</option>
+              <option value="Feature request">Feature request</option>
+              <option value="Purchase / PRO">Purchase / PRO</option>
+              <option value="iOS waitlist">iPhone waitlist</option>
+              <option value="Press / partnership">Press / partnership</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" rows="6" required placeholder="Tell us what's on your mind. For a bug, mention your phone model and what you were doing."></textarea>
+          </div>
+          <div class="hp" aria-hidden="true"><label>Leave empty<input type="text" name="_honey" tabindex="-1" autocomplete="off" /></label></div>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          <div class="form-foot">
+            <p class="form-note">We only use your details to reply. See our <a href="/privacy.html">privacy policy</a>.</p>
+            <button type="submit" class="btn btn-primary" id="sendBtn"><span>Send message</span> →</button>
+          </div>
+        </form>
       </div>
-      <div class="card">
-        <h3>What to expect</h3>
-        <ul class="download-list" style="margin-top: 10px;">
-          <li>Bug reports: we triage within 24h and respond with a timeline.</li>
-          <li>Feature requests: added to our roadmap, we reply with status.</li>
-          <li>Press / partnerships: reply within 1 working day.</li>
-          <li>Everything else: within 2 working days, usually faster.</li>
-        </ul>
-      </div>
+
+      <aside class="contact-side">
+        <div class="card side-card">
+          <div class="side-label">Prefer email?</div>
+          <p>Write to us from your own mail app.</p>
+          <div class="mail-row">
+            <a href="mailto:contact@grounded-studio.app?subject=FreshGarant" class="mail-addr">contact@grounded-studio.app</a>
+            <button type="button" class="copy-btn" id="copyBtn">Copy</button>
+          </div>
+        </div>
+        <div class="card side-card">
+          <div class="side-label">Bug in the app?</div>
+          <p>Open FreshGarant → Settings → Help → <strong>Send feedback</strong>. Your app version and platform are filled in automatically.</p>
+        </div>
+        <div class="card side-card">
+          <div class="side-label">What to expect</div>
+          <ul class="download-list">
+            <li>Bug reports: triaged within 24 hours</li>
+            <li>Feature requests: reply with roadmap status</li>
+            <li>Press &amp; partnerships: within 1 working day</li>
+            <li>Everything else: within 2 working days</li>
+          </ul>
+        </div>
+      </aside>
     </div>
   </div>
 </section>
@@ -62,5 +110,7 @@
 </div>
 <div class="footer-bottom"><span>© 2026 Grounded Studio · Made with care in the Netherlands</span><span>freshgarant.app</span></div>
 </div></footer>
+
+<script src="/assets/js/contact-form.js?v=2026102403" defer></script>
 </body>
 </html>
