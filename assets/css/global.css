@@ -319,6 +319,42 @@ img { max-width: 100%; display: block; }
   .savings-hero { grid-template-columns: minmax(0, 1fr) 220px; gap: 40px; }
 }
 
+/* FAQ (native <details> accordion — no JS) */
+.faq { max-width: 780px; }
+.faq details {
+  background: var(--fg-surface);
+  border: 1px solid rgba(27, 94, 32, 0.08);
+  border-radius: var(--fg-radius-md);
+  padding: 0 22px;
+  margin-bottom: 12px;
+  transition: box-shadow 0.2s ease;
+}
+.faq details[open] { box-shadow: var(--fg-shadow-sm); }
+.faq summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 0;
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: var(--fg-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+  content: '+';
+  flex-shrink: 0;
+  color: var(--fg-primary);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { margin: 0 0 18px; color: var(--fg-text-muted); font-size: 15px; line-height: 1.6; }
+
 /* Feature cards */
 .feature-grid { gap: 20px; }
 .feature-card {

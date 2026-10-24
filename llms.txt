@@ -1,0 +1,44 @@
+# FreshGarant
+
+> Free food expiry tracker for Android by Grounded Studio (Netherlands). Tracks expiry dates of everything in your fridge, freezer and pantry, sends reminders before food goes bad, and suggests recipes from what you already have using Google Gemini AI. Available in English and Dutch on Google Play.
+
+FreshGarant helps households stop wasting food and money. Users add groceries by scanning a barcode, tapping common items, photographing a receipt, or taking one photo of the fridge (AI). The app then tracks every expiry date and tells the user what to use first. No account is required; the inventory is stored on the user's own phone.
+
+## Core features
+
+- **Barcode scanner** — fills in product name, brand, category, storage location and expiry date
+- **Daily expiry reminders** — morning digest of what expires today, tomorrow and this week, with freeze-it tips
+- **"Use these first"** — home screen shows which products to use today
+- **Expiry calendar** — colour-coded month view of upcoming expiry dates
+- **Cook tab** — recipes matched to the user's actual inventory, expiring items first
+- **Smart shopping list** — shows how many of an item are already in the fridge to prevent duplicate purchases; sort by supermarket aisle
+- **Savings tracking** — shows money saved each time food is used in time, plus a monthly total
+- **Achievements and year in review** — 18 badges, yearly recap including CO₂ prevented
+
+## AI features (PRO, one free trial each for every user)
+
+- **AI Fridge Scan** — one photo, every product recognised with storage and expiry suggestions
+- **AI Receipt Scan** — bulk-add an entire grocery receipt
+- **AI Recipes** — personalised recipes from soon-to-expire ingredients
+- **AI Weekly Meal Plan** — seven dinners plus a shopping list for missing items
+
+## Pricing
+
+- **Free**: up to 40 products, barcode scanning, reminders, shopping list, savings tracking
+- **PRO** (monthly or yearly subscription via Google Play): unlimited products, all AI features, Cook Mode with timers, detailed statistics, family sharing, calories and nutrition
+- Every free user gets one lifetime free trial of each AI feature
+
+## Platforms
+
+- Android (Google Play): https://play.google.com/store/apps/details?id=app.rork.versgarant
+- iOS: not yet available
+
+## Links
+
+- Website (English): https://freshgarant.app/
+- Website (Dutch): https://freshgarant.app/nl/
+- Features: https://freshgarant.app/features.html
+- Savings calculator: https://freshgarant.app/savings.html
+- Privacy policy: https://freshgarant.app/privacy.html
+- Contact: contact@grounded-studio.app
+- Developer: Grounded Studio — https://grounded-studio.app

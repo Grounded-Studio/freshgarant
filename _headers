@@ -1,16 +1,23 @@
 # Cloudflare Pages reads this file to set HTTP headers per path pattern.
 # Docs: https://developers.cloudflare.com/pages/configuration/headers/
 
-# Long cache for immutable asset files (fingerprinted at build time by Astro).
-/_astro/*
-  Cache-Control: public, max-age=31536000, immutable
+# CSS + JS: always revalidate with Cloudflare (cheap ETag check), so a push
+# is visible immediately. The ?v= query on the <link>/<script> tags is a
+# second safety net for browsers that ignore revalidation.
+/assets/css/*
+  Cache-Control: public, max-age=0, must-revalidate
+/assets/js/*
+  Cache-Control: public, max-age=0, must-revalidate
 
-# Images in /public/images/ change rarely — 1 week cache, must-revalidate
-# so Cloudflare re-checks when you push a new logo.
-/images/*
-  Cache-Control: public, max-age=604800, must-revalidate
+# Images + icons change rarely — 1 week cache.
+/assets/images/*
+  Cache-Control: public, max-age=604800
+/assets/image-hero/*
+  Cache-Control: public, max-age=604800
+/assets/icons/*
+  Cache-Control: public, max-age=604800
 
-# Baseline security headers for everything else.
+# Baseline security headers for everything.
 /*
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
