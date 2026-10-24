@@ -25,7 +25,7 @@ FreshGarant helps households stop wasting food and money. Users add groceries by
 ## Pricing
 
 - **Free**: up to 40 products, barcode scanning, reminders, shopping list, savings tracking
-- **PRO** (monthly or yearly subscription via Google Play): unlimited products, all AI features, Cook Mode with timers, detailed statistics, family sharing, calories and nutrition
+- **PRO** (€2.99/month or €19.99/year via Google Play): unlimited products, all AI features, Cook Mode with timers, detailed statistics, family sharing, calories and nutrition
 - Every free user gets one lifetime free trial of each AI feature
 
 ## Platforms
