@@ -45,7 +45,7 @@
   </url>
   <url>
     <loc>https://freshgarant.app/privacy.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/privacy.html" />
@@ -103,7 +103,7 @@
   </url>
   <url>
     <loc>https://freshgarant.app/nl/privacy.html</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/privacy.html" />
@@ -116,6 +116,23 @@
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/terms.html" />
     <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/terms.html" />
+  </url>
+
+  <url>
+    <loc>https://freshgarant.app/delete-data.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/delete-data.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/delete-data.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/delete-data.html</loc>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/delete-data.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/delete-data.html" />
   </url>
 
 </urlset>

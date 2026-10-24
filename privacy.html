@@ -14,10 +14,8 @@
 <meta property="og:title" content="Privacy policy — FreshGarant" />
 <meta property="og:image" content="https://freshgarant.app/assets/images/og-image.png" />
 <meta property="og:type" content="website" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-<link rel="stylesheet" href="/assets/css/global.css?v=2026102404" />
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/assets/css/global.css?v=2026102501" />
 </head>
 <body>
 
@@ -39,78 +37,89 @@
   <div class="container">
     <span class="section-kicker">PRIVACY</span>
     <h1>Privacy policy</h1>
-    <p style="color: var(--fg-text-faint); font-size: 13px;">Last updated: 18 October 2026</p>
-    <p class="section-sub" style="margin-top: 20px;">FreshGarant is built around one principle: your inventory is your business, not ours. Most of the app runs entirely on your device and never sees a server. This page explains exactly what does leave your phone, why, and what control you have.</p>
+    <p style="color: var(--fg-text-faint); font-size: 13px;">Last updated: 25 October 2026</p>
+    <p class="section-sub" style="margin-top: 20px;">FreshGarant is built around one principle: your inventory is your business, not ours. Most of the app runs on your device. This page explains exactly what does leave your phone, why, and what control you have. Everything that leaves your phone is sent over an encrypted connection (HTTPS).</p>
 
     <article class="prose">
       <h2>1. Who we are</h2>
-      <p>FreshGarant is published by <strong>Grounded Studio</strong>, based in the Netherlands. Contact: <a href="mailto:contact@grounded-studio.app">contact@grounded-studio.app</a>. For privacy-specific requests, email the same address with "Privacy request" in the subject.</p>
+      <p>FreshGarant is published by <strong>Grounded Studio</strong>, based in the Netherlands. Contact: <a href="mailto:contact@grounded-studio.app">contact@grounded-studio.app</a>. For privacy requests, email the same address with "Privacy request" in the subject.</p>
 
       <h2>2. What stays on your device</h2>
-      <p><strong>Everything by default.</strong> The product list, categories, storage locations, expiry dates, prices, consumption history, waste log, shopping list, achievements, settings — all of it is stored in a local SQLite database on your phone. We never see it.</p>
+      <p>Your product list, categories, storage locations, expiry dates, prices, notes, consumption history, waste log, shopping list, achievements, settings, saved supermarkets, home location and the product photos you take are stored <strong>only on your phone</strong>. Your precise GPS location never leaves your phone.</p>
 
       <h2>3. What leaves your device, and why</h2>
 
-      <h3>3.1 Firebase Analytics (anonymous usage data)</h3>
-      <p>We log a small set of events to understand which parts of the app are used — for example, which screens are opened, which features get tapped, whether a purchase succeeded. We deliberately send <strong>no personally identifying information, no product names, no photo contents, no receipt text</strong>. All quantities are bucketed into ranges (e.g. "5–15 items") so we can read trends without identifying individuals.</p>
-      <p>Processor: Google (Firebase). Legal basis: legitimate interest in understanding product usage. You can opt out by denying analytics permission in your Android system settings.</p>
+      <h3>3.1 Usage statistics (Firebase Analytics)</h3>
+      <p>We log a small set of events to understand which parts of the app are used — for example which screens are opened, which add method is used, and whether a purchase succeeded. We send <strong>no names, no product names, no photos and no receipt text</strong>; quantities are bucketed into ranges (e.g. "5–15 items"). Firebase also records technical data automatically: an app-instance ID, device model, Android version and approximate country. We do not collect your advertising ID.</p>
+      <p>Processor: Google (Firebase). Our Google Analytics data-sharing settings are switched off, so Google does not use this data for its own purposes. Legal basis: legitimate interest in improving the app. You can switch this off at any time: <strong>Settings → Data → Share usage statistics</strong>.</p>
 
-      <h3>3.2 Gemini API — only when you use an AI feature</h3>
-      <p>When you tap AI Fridge Scan, AI Recipe or AI Weekly Meal Plan, the following is sent to Google's Gemini API:</p>
+      <h3>3.2 AI features (Google Gemini) — only when you use them</h3>
       <ul>
-        <li><strong>Fridge scan:</strong> the photo you just took.</li>
-        <li><strong>Recipe / meal plan:</strong> a list of product names currently in your inventory.</li>
+        <li><strong>AI Fridge Scan:</strong> the photo you take of your fridge.</li>
+        <li><strong>AI Recipe and AI Weekly Meal Plan:</strong> the names of products in your inventory.</li>
+        <li><strong>Searching a supermarket by name:</strong> the text you type, so Gemini can recognise the store and city.</li>
       </ul>
-      <p>Google processes these to generate a response and then returns it to the app. Per Google's current terms, data sent to the paid Gemini API is not used to train Google's models. We never store the photo on our servers (we don't have servers) — it travels phone → Google → phone.</p>
-      <p>Receipt scan uses Google's on-device ML Kit, which runs locally on your phone. Nothing leaves your device.</p>
+      <p>We use the paid Gemini API. Under Google's terms, this data is not used to train Google's models; Google may keep it for a limited period to detect abuse. We do not store it ourselves.</p>
+      <p>Receipt scan and barcode scanning use Google ML Kit, which runs entirely on your phone. Nothing is uploaded.</p>
 
-      <h3>3.3 Family sharing (opt-in, Firestore)</h3>
-      <p>If you create or join a family, the products you add become visible to the other family members via Google Cloud Firestore. You can leave the family at any time, after which your products stop syncing. Family data is deleted from Firestore 30 days after the last family member leaves.</p>
+      <h3>3.3 Family sharing (optional, PRO)</h3>
+      <p>If you create or join a family, the app signs you in with an anonymous Firebase ID (no email or password). Shared through Google Cloud Firestore: the products you add (name, brand, barcode, dates, quantity, price, notes), the shared shopping list, a short activity log ("Anna added milk") and the display name you choose. Product photos you take stay on your phone.</p>
+      <p>When you leave a family, your membership is removed; products you added stay visible to the remaining members. When the last member leaves, the family and all its data are deleted.</p>
 
-      <h3>3.4 Barcode lookups (Open Food Facts)</h3>
-      <p>When you scan a barcode we query the free <a href="https://openfoodfacts.org/" target="_blank" rel="noopener">Open Food Facts</a> database for product name, brand and nutrition info. Only the barcode number is sent — no identifying information about you.</p>
+      <h3>3.4 Invite friends (optional)</h3>
+      <p>To give you and a friend a free PRO month, we store your invite code together with your anonymous Firebase ID and the anonymous IDs of people who used it. No names or email addresses.</p>
 
-      <h3>3.5 Google Play Billing (if you buy PRO)</h3>
-      <p>Payment is handled entirely by Google Play. We receive only a confirmation that your subscription is active or inactive — no card details, no billing address.</p>
+      <h3>3.5 Barcode lookups (Open Food Facts)</h3>
+      <p>When you scan a barcode we look it up in the free <a href="https://openfoodfacts.org/" target="_blank" rel="noopener">Open Food Facts</a> database for product name, brand and nutrition info. Only the barcode number is sent.</p>
 
-      <h3>3.6 Location (only if you enable "Nearby store alerts")</h3>
-      <p>If you opt in to nearby-store notifications, your foreground location is read when the app is open to compare against your saved supermarkets. Location is never sent to our servers, never stored, and never used in the background.</p>
+      <h3>3.6 Supermarkets and location (optional)</h3>
+      <ul>
+        <li><strong>Nearby-store alerts:</strong> while the app is open, your location is compared on your phone with your saved supermarkets. It is not sent anywhere and never used in the background.</li>
+        <li><strong>Finding supermarkets near you:</strong> we send an approximate location, rounded to about 1 km, to OpenStreetMap services in the EU (overpass-api.de, overpass.kumi.systems, overpass.private.coffee and nominatim.openstreetmap.org). Searching by name sends only the text you type.</li>
+      </ul>
 
-      <h3>3.7 Contact form on this website</h3>
-      <p>When you use the contact form on freshgarant.app, your name, email address, chosen topic and message are sent through our own server (hosted by STRATO in Germany) straight to our inbox. No third-party form service is involved. We use these details only to reply to you and delete the conversation when it is no longer needed. You can also email us directly instead.</p>
+      <h3>3.7 Google Play (purchases, updates, ratings)</h3>
+      <p>Payments are handled entirely by Google Play. We receive only whether your subscription is active, and our statistics record which plan was bought (monthly or yearly) — never card or billing details. In-app updates and ratings also run through Google Play.</p>
+
+      <h3>3.8 This website</h3>
+      <p>freshgarant.app sets no cookies and loads no analytics or tracking scripts.</p>
+      <p>Contact form: your name, email address, topic and message are sent through our own server (hosted by STRATO in Germany) to our inbox. We use them only to reply and delete the conversation when it is no longer needed. You can also email us directly.</p>
 
       <h2>4. What we do NOT collect</h2>
       <ul>
-        <li>No account, email or password is required to use the app.</li>
-        <li>No contacts, calendar, SMS or microphone access.</li>
-        <li>No advertising identifiers for ad-targeting purposes.</li>
-        <li>No third-party advertising SDKs. There are no ads in FreshGarant.</li>
+        <li>No account, email or password is needed to use the app.</li>
+        <li>No contacts, calendar, SMS or microphone.</li>
+        <li>No advertising ID and no advertising SDKs. There are no ads in FreshGarant.</li>
+        <li>No precise location leaves your phone.</li>
       </ul>
 
-      <h2>5. Your rights (GDPR / UK GDPR)</h2>
-      <p>You have the right to:</p>
+      <h2>5. Your rights (GDPR)</h2>
       <ul>
-        <li>Request a copy of what we hold about you (export your product list from Settings → Data → Export CSV; the only cloud data is family-shared products, available via the family screen).</li>
-        <li>Delete all local data from Settings → Data → Delete all data. This clears the SQLite database and all SharedPreferences.</li>
-        <li>Request deletion of any Firebase Analytics records associated with your Firebase install-ID by emailing us.</li>
-        <li>Withdraw consent for analytics or location at any time via Android system settings.</li>
+        <li><strong>Copy of your data:</strong> export your products via Settings → Data → Export CSV. Family data is visible on the family screen.</li>
+        <li><strong>Delete everything:</strong> Settings → Data → Delete all my data. This clears the app's database and settings on your phone, removes you from your family (deleting the family if you are the last member), deletes your invite code and deletes your anonymous Firebase ID. No longer have the app? See <a href="/delete-data.html">delete your data</a>.</li>
+        <li><strong>Stop usage statistics:</strong> Settings → Data → Share usage statistics.</li>
+        <li><strong>Location:</strong> withdraw the permission at any time in Android settings.</li>
+        <li><strong>Complaints:</strong> you can contact the Dutch Data Protection Authority (Autoriteit Persoonsgegevens).</li>
       </ul>
 
       <h2>6. Data retention</h2>
       <ul>
-        <li>Local SQLite data: retained until you delete it (uninstalling the app or using Settings → Delete all data).</li>
-        <li>Firebase Analytics: retained per Firebase defaults (max 14 months) and anonymised earlier where possible.</li>
-        <li>Family-shared Firestore data: deleted 30 days after the last member leaves the family.</li>
+        <li>Data on your phone: until you delete it or uninstall the app.</li>
+        <li>Usage statistics: 14 months, then deleted automatically.</li>
+        <li>Family data: until the last member leaves or you delete your data.</li>
+        <li>Invite codes: until you delete your data.</li>
+        <li>AI requests: not stored by us; Google per its Gemini API terms.</li>
+        <li>Contact messages: until no longer needed to help you.</li>
       </ul>
 
       <h2>7. Children</h2>
-      <p>FreshGarant is not directed at children under 13 (16 in the EU). We do not knowingly collect data from children. If you believe a child has used the app and you want their data removed, email us.</p>
+      <p>FreshGarant is not directed at children under 13 (16 in the EU). We do not knowingly collect data from children. If you believe a child has used the app and want their data removed, email us.</p>
 
       <h2>8. Changes to this policy</h2>
-      <p>If we make material changes we will update the "last updated" date and, where appropriate, show an in-app notice on next launch. Continued use of the app constitutes acceptance.</p>
+      <p>If we make material changes we update the "last updated" date and, where appropriate, show a notice in the app.</p>
 
       <h2>9. Contact</h2>
-      <p>Questions, concerns, or formal privacy requests: <a href="mailto:contact@grounded-studio.app">contact@grounded-studio.app</a>.</p>
+      <p>Questions or privacy requests: <a href="mailto:contact@grounded-studio.app">contact@grounded-studio.app</a>.</p>
     </article>
   </div>
 </section>
@@ -121,7 +130,7 @@
     <div class="footer-grid">
       <div><div class="brand-mark" style="color: #fff;"><img src="/assets/icons/icon_favicon_64.png" alt="" width="34" height="34" /><span>FreshGarant</span></div><p class="footer-tagline">Scan your groceries. Cook what's fresh. Never waste food again.</p></div>
       <div class="footer-col"><h4>Product</h4><ul><li><a href="/features.html">Features</a></li><li><a href="/savings.html">Savings calculator</a></li><li><a href="/download.html">Download</a></li></ul></div>
-      <div class="footer-col"><h4>Legal</h4><ul><li><a href="/privacy.html">Privacy</a></li><li><a href="/terms.html">Terms</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="/privacy.html">Privacy</a></li><li><a href="/terms.html">Terms</a></li><li><a href="/delete-data.html">Delete your data</a></li><li><a href="/contact.html">Contact</a></li></ul></div>
     </div>
     <div class="footer-bottom"><span>© 2026 Grounded Studio · Made with care in the Netherlands</span><span>freshgarant.app</span></div>
   </div>

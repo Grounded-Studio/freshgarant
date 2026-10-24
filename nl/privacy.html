@@ -14,10 +14,8 @@
 <meta property="og:title" content="Privacybeleid — FreshGarant" />
 <meta property="og:image" content="https://freshgarant.app/assets/images/og-image.png" />
 <meta property="og:type" content="website" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-<link rel="stylesheet" href="/assets/css/global.css?v=2026102404" />
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="/assets/css/global.css?v=2026102501" />
 </head>
 <body>
 <header class="site-header"><div class="container">
@@ -30,78 +28,89 @@
   <div class="container">
     <span class="section-kicker">PRIVACY</span>
     <h1>Privacybeleid</h1>
-    <p style="color: var(--fg-text-faint); font-size: 13px;">Laatst bijgewerkt: 18 oktober 2026</p>
-    <p class="section-sub" style="margin-top: 20px;">FreshGarant is gebouwd rond één principe: jouw voorraad is jouw zaak, niet die van ons. Het grootste deel van de app draait volledig op je apparaat en bereikt nooit een server. Deze pagina legt precies uit wat er wél je telefoon verlaat, waarom, en welke controle jij hebt.</p>
+    <p style="color: var(--fg-text-faint); font-size: 13px;">Laatst bijgewerkt: 25 oktober 2026</p>
+    <p class="section-sub" style="margin-top: 20px;">FreshGarant is gebouwd rond één principe: jouw voorraad is jouw zaak, niet die van ons. Het grootste deel van de app draait op je telefoon. Deze pagina legt precies uit wat er wél je telefoon verlaat, waarom, en welke controle je hebt. Alles wat je telefoon verlaat, gaat via een versleutelde verbinding (HTTPS).</p>
 
     <article class="prose">
       <h2>1. Wie wij zijn</h2>
-      <p>FreshGarant wordt uitgegeven door <strong>Grounded Studio</strong>, gevestigd in Nederland. Contact: <a href="mailto:contact@grounded-studio.app">contact@grounded-studio.app</a>. Voor privacy-specifieke verzoeken: mail hetzelfde adres met "Privacy-verzoek" in het onderwerp.</p>
+      <p>FreshGarant wordt uitgegeven door <strong>Grounded Studio</strong>, gevestigd in Nederland. Contact: <a href="mailto:contact@grounded-studio.app">contact@grounded-studio.app</a>. Voor privacyverzoeken mail je hetzelfde adres met "Privacyverzoek" in het onderwerp.</p>
 
-      <h2>2. Wat op je apparaat blijft</h2>
-      <p><strong>Standaard alles.</strong> De productlijst, categorieën, opslaglocaties, vervaldata, prijzen, consumptie-historie, verspillings-log, boodschappenlijst, prestaties, instellingen — het staat allemaal in een lokale SQLite-database op je telefoon. Wij zien het nooit.</p>
+      <h2>2. Wat op je telefoon blijft</h2>
+      <p>Je productlijst, categorieën, bewaarplekken, houdbaarheidsdata, prijzen, notities, verbruiksgeschiedenis, verspillingslog, boodschappenlijst, prestaties, instellingen, opgeslagen supermarkten, thuislocatie en de productfoto's die je maakt, staan <strong>alleen op je telefoon</strong>. Je precieze GPS-locatie verlaat je telefoon nooit.</p>
 
-      <h2>3. Wat wél je apparaat verlaat, en waarom</h2>
+      <h2>3. Wat wél je telefoon verlaat, en waarom</h2>
 
-      <h3>3.1 Firebase Analytics (anonieme gebruiksdata)</h3>
-      <p>We loggen een kleine set events om te begrijpen welke onderdelen van de app gebruikt worden — bijvoorbeeld welke schermen worden geopend, welke features getikt, of een aankoop is gelukt. We sturen bewust <strong>geen persoonlijke identificatie, geen productnamen, geen foto-inhoud, geen kassabon-tekst</strong>. Alle aantallen worden gebucket in bereiken (bv. "5–15 items") zodat we trends kunnen lezen zonder individuen te identificeren.</p>
-      <p>Verwerker: Google (Firebase). Rechtsgrondslag: gerechtvaardigd belang bij inzicht in productgebruik. Je kunt opt-outen door analytics-toestemming te weigeren in je Android systeeminstellingen.</p>
+      <h3>3.1 Gebruiksstatistieken (Firebase Analytics)</h3>
+      <p>We loggen een klein aantal gebeurtenissen om te begrijpen welke delen van de app gebruikt worden, bijvoorbeeld welke schermen worden geopend, welke manier van toevoegen wordt gebruikt en of een aankoop gelukt is. We sturen <strong>geen namen, geen productnamen, geen foto's en geen kassabontekst</strong>; aantallen worden in bereiken ingedeeld (bv. "5–15 producten"). Firebase legt daarnaast automatisch technische gegevens vast: een app-instance-ID, het toestelmodel, de Android-versie en het land bij benadering. We verzamelen je advertentie-ID niet.</p>
+      <p>Verwerker: Google (Firebase). Het delen van gegevens in onze Google Analytics-instellingen staat uit, dus Google gebruikt deze gegevens niet voor eigen doeleinden. Rechtsgrond: gerechtvaardigd belang bij het verbeteren van de app. Je kunt dit altijd uitzetten: <strong>Instellingen → Data → Gebruiksstatistieken delen</strong>.</p>
 
-      <h3>3.2 Gemini API — alleen bij gebruik van een AI-functie</h3>
-      <p>Wanneer je AI Koelkast-scan, AI Recept of AI Weekplanner gebruikt, wordt het volgende naar Google's Gemini API verzonden:</p>
+      <h3>3.2 AI-functies (Google Gemini) — alleen als je ze gebruikt</h3>
       <ul>
-        <li><strong>Koelkast-scan:</strong> de foto die je zojuist nam.</li>
-        <li><strong>Recept / weekplan:</strong> een lijst productnamen uit je huidige voorraad.</li>
+        <li><strong>AI Koelkast-scan:</strong> de foto die je van je koelkast maakt.</li>
+        <li><strong>AI Recept en AI Weekmenu:</strong> de namen van producten in je voorraad.</li>
+        <li><strong>Een supermarkt zoeken op naam:</strong> de tekst die je typt, zodat Gemini de winkel en plaats herkent.</li>
       </ul>
-      <p>Google verwerkt deze om een antwoord te genereren en stuurt dat terug naar de app. Volgens Google's huidige voorwaarden wordt data verstuurd naar de betaalde Gemini API niet gebruikt om Google's modellen te trainen. Wij slaan de foto nooit op op onze servers (wij hebben geen servers) — hij reist telefoon → Google → telefoon.</p>
-      <p>Kassabon-scan gebruikt Google's on-device ML Kit, dat lokaal op je telefoon draait. Er verlaat niets je apparaat.</p>
+      <p>We gebruiken de betaalde Gemini API. Volgens de voorwaarden van Google worden deze gegevens niet gebruikt om de modellen van Google te trainen; Google kan ze beperkte tijd bewaren om misbruik op te sporen. Wij slaan ze zelf niet op.</p>
+      <p>De kassabon-scan en de barcodescanner gebruiken Google ML Kit, dat volledig op je telefoon draait. Er wordt niets geüpload.</p>
 
-      <h3>3.3 Familie delen (opt-in, Firestore)</h3>
-      <p>Als je een familie aanmaakt of eraan deelneemt, worden de producten die je toevoegt zichtbaar voor andere familieleden via Google Cloud Firestore. Je kunt de familie op elk moment verlaten, waarna je producten niet meer synchroniseren. Familie-data wordt 30 dagen na het vertrek van het laatste familielid uit Firestore verwijderd.</p>
+      <h3>3.3 Familie delen (optioneel, PRO)</h3>
+      <p>Als je een familie aanmaakt of erbij komt, logt de app je in met een anoniem Firebase-ID (geen e-mail of wachtwoord). Via Google Cloud Firestore worden gedeeld: de producten die je toevoegt (naam, merk, barcode, data, hoeveelheid, prijs, notities), de gedeelde boodschappenlijst, een kort activiteitenlog ("Anna heeft melk toegevoegd") en de weergavenaam die je kiest. Productfoto's die je maakt, blijven op je telefoon.</p>
+      <p>Als je een familie verlaat, wordt je lidmaatschap verwijderd; producten die jij hebt toegevoegd, blijven zichtbaar voor de overige leden. Verlaat het laatste lid de familie, dan worden de familie en al haar gegevens verwijderd.</p>
 
-      <h3>3.4 Barcode-opzoekingen (Open Food Facts)</h3>
-      <p>Wanneer je een barcode scant, bevragen we de gratis <a href="https://openfoodfacts.org/" target="_blank" rel="noopener">Open Food Facts</a> database voor productnaam, merk en voedingsinformatie. Alleen het barcode-nummer wordt verzonden — geen identificerende informatie over jou.</p>
+      <h3>3.4 Vrienden uitnodigen (optioneel)</h3>
+      <p>Om jou en een vriend een gratis PRO-maand te geven, bewaren we je uitnodigingscode samen met je anonieme Firebase-ID en de anonieme ID's van wie de code gebruikte. Geen namen of e-mailadressen.</p>
 
-      <h3>3.5 Google Play Billing (als je PRO koopt)</h3>
-      <p>Betaling wordt volledig afgehandeld door Google Play. Wij ontvangen alleen een bevestiging dat je abonnement actief of inactief is — geen kaartgegevens, geen factuuradres.</p>
+      <h3>3.5 Barcode-opzoekingen (Open Food Facts)</h3>
+      <p>Als je een barcode scant, zoeken we die op in de gratis <a href="https://openfoodfacts.org/" target="_blank" rel="noopener">Open Food Facts</a>-database voor productnaam, merk en voedingswaarden. Alleen het barcodenummer wordt verstuurd.</p>
 
-      <h3>3.6 Locatie (alleen als je "Nabije winkel meldingen" aanzet)</h3>
-      <p>Als je opt-int voor nearby-store notificaties, wordt je foreground-locatie uitgelezen wanneer de app open staat om te vergelijken met je opgeslagen supermarkten. Locatie wordt nooit naar onze servers verzonden, nooit opgeslagen, en nooit op de achtergrond gebruikt.</p>
+      <h3>3.6 Supermarkten en locatie (optioneel)</h3>
+      <ul>
+        <li><strong>Melding bij winkel in de buurt:</strong> terwijl de app open is, wordt je locatie op je telefoon vergeleken met je opgeslagen supermarkten. Die locatie wordt nergens heen gestuurd en nooit op de achtergrond gebruikt.</li>
+        <li><strong>Supermarkten bij jou in de buurt zoeken:</strong> we sturen een locatie bij benadering, afgerond op ongeveer 1 km, naar OpenStreetMap-diensten in de EU (overpass-api.de, overpass.kumi.systems, overpass.private.coffee en nominatim.openstreetmap.org). Zoeken op naam stuurt alleen de tekst die je typt.</li>
+      </ul>
 
-      <h3>3.7 Contactformulier op deze website</h3>
-      <p>Als je het contactformulier op freshgarant.app gebruikt, worden je naam, e-mailadres, gekozen onderwerp en bericht via onze eigen server (gehost bij STRATO in Duitsland) direct naar onze inbox gestuurd. Er komt geen externe formulierdienst aan te pas. We gebruiken deze gegevens alleen om je te antwoorden en verwijderen het gesprek zodra het niet meer nodig is. Je kunt ons ook direct mailen.</p>
+      <h3>3.7 Google Play (aankopen, updates, beoordelingen)</h3>
+      <p>Betalingen worden volledig door Google Play afgehandeld. Wij krijgen alleen te zien of je abonnement actief is, en onze statistieken leggen vast welk abonnement is gekocht (maand of jaar), nooit kaart- of factuurgegevens. Updates en beoordelingen in de app lopen ook via Google Play.</p>
+
+      <h3>3.8 Deze website</h3>
+      <p>freshgarant.app plaatst geen cookies en laadt geen analyse- of trackingscripts.</p>
+      <p>Contactformulier: je naam, e-mailadres, onderwerp en bericht gaan via onze eigen server (gehost bij STRATO in Duitsland) naar onze inbox. We gebruiken ze alleen om te antwoorden en verwijderen het gesprek zodra het niet meer nodig is. Je kunt ons ook direct mailen.</p>
 
       <h2>4. Wat we NIET verzamelen</h2>
       <ul>
-        <li>Geen account, e-mail of wachtwoord nodig om de app te gebruiken.</li>
-        <li>Geen toegang tot contacten, agenda, SMS of microfoon.</li>
-        <li>Geen advertentie-ID's voor ad-targeting doeleinden.</li>
-        <li>Geen externe advertentie-SDK's. Er zijn geen advertenties in FreshGarant.</li>
+        <li>Er is geen account, e-mail of wachtwoord nodig om de app te gebruiken.</li>
+        <li>Geen contacten, agenda, sms of microfoon.</li>
+        <li>Geen advertentie-ID en geen advertentie-SDK's. Er staan geen advertenties in FreshGarant.</li>
+        <li>Je precieze locatie verlaat je telefoon niet.</li>
       </ul>
 
-      <h2>5. Jouw rechten (AVG / GDPR)</h2>
-      <p>Je hebt het recht om:</p>
+      <h2>5. Jouw rechten (AVG)</h2>
       <ul>
-        <li>Een kopie te vragen van wat we over jou bewaren (exporteer je productlijst via Instellingen → Data → CSV exporteren; de enige cloud-data zijn familie-gedeelde producten, zichtbaar via het familie-scherm).</li>
-        <li>Alle lokale data te wissen via Instellingen → Data → Alle data verwijderen. Dit leegt de SQLite-database en alle SharedPreferences.</li>
-        <li>Verwijdering te vragen van Firebase Analytics-records gekoppeld aan je Firebase install-ID door ons te mailen.</li>
-        <li>Toestemming voor analytics of locatie op elk moment in te trekken via Android systeeminstellingen.</li>
+        <li><strong>Kopie van je gegevens:</strong> exporteer je producten via Instellingen → Data → Exporteren als CSV. Familiegegevens zie je op het familiescherm.</li>
+        <li><strong>Alles verwijderen:</strong> Instellingen → Data → Al mijn gegevens verwijderen. Dit wist de database en instellingen van de app op je telefoon, haalt je uit je familie (en verwijdert de familie als je het laatste lid bent), verwijdert je uitnodigingscode en je anonieme Firebase-ID. App niet meer geïnstalleerd? Zie <a href="/nl/delete-data.html">je gegevens verwijderen</a>.</li>
+        <li><strong>Gebruiksstatistieken stoppen:</strong> Instellingen → Data → Gebruiksstatistieken delen.</li>
+        <li><strong>Locatie:</strong> trek de toestemming altijd in via de Android-instellingen.</li>
+        <li><strong>Klachten:</strong> je kunt terecht bij de Autoriteit Persoonsgegevens.</li>
       </ul>
 
-      <h2>6. Databewaring</h2>
+      <h2>6. Bewaartermijnen</h2>
       <ul>
-        <li>Lokale SQLite-data: bewaard tot je 'm verwijdert (app de-installeren of Instellingen → Alle data verwijderen).</li>
-        <li>Firebase Analytics: bewaard volgens Firebase standaard (max 14 maanden) en waar mogelijk eerder geanonimiseerd.</li>
-        <li>Familie-gedeelde Firestore-data: 30 dagen na vertrek van het laatste familielid verwijderd.</li>
+        <li>Gegevens op je telefoon: tot je ze verwijdert of de app verwijdert.</li>
+        <li>Gebruiksstatistieken: 14 maanden, daarna automatisch verwijderd.</li>
+        <li>Familiegegevens: tot het laatste lid vertrekt of je je gegevens verwijdert.</li>
+        <li>Uitnodigingscodes: tot je je gegevens verwijdert.</li>
+        <li>AI-verzoeken: niet door ons bewaard; door Google volgens de Gemini API-voorwaarden.</li>
+        <li>Contactberichten: tot ze niet meer nodig zijn om je te helpen.</li>
       </ul>
 
       <h2>7. Kinderen</h2>
-      <p>FreshGarant is niet gericht op kinderen onder de 13 (16 in de EU). We verzamelen niet bewust data van kinderen. Als je denkt dat een kind de app heeft gebruikt en je wilt dat de data wordt verwijderd, mail ons.</p>
+      <p>FreshGarant is niet gericht op kinderen onder de 13 (16 in de EU). We verzamelen niet bewust gegevens van kinderen. Denk je dat een kind de app heeft gebruikt en wil je dat de gegevens worden verwijderd, mail ons dan.</p>
 
       <h2>8. Wijzigingen in dit beleid</h2>
-      <p>Bij materiële wijzigingen updaten we de "laatst bijgewerkt" datum en tonen waar nodig een in-app melding bij de volgende start. Doorgaand gebruik van de app geldt als acceptatie.</p>
+      <p>Bij belangrijke wijzigingen passen we de datum "laatst bijgewerkt" aan en tonen we waar nodig een melding in de app.</p>
 
       <h2>9. Contact</h2>
-      <p>Vragen, zorgen of formele privacy-verzoeken: <a href="mailto:contact@grounded-studio.app">contact@grounded-studio.app</a>.</p>
+      <p>Vragen of privacyverzoeken: <a href="mailto:contact@grounded-studio.app">contact@grounded-studio.app</a>.</p>
     </article>
   </div>
 </section>
@@ -111,7 +120,7 @@
 <div class="footer-grid">
 <div><div class="brand-mark" style="color: #fff;"><img src="/assets/icons/icon_favicon_64.png" alt="" width="34" height="34" /><span>FreshGarant</span></div><p class="footer-tagline">Scan je boodschappen. Kook wat vers is. Nooit meer eten weggooien.</p></div>
 <div class="footer-col"><h4>Product</h4><ul><li><a href="/nl/features.html">Functies</a></li><li><a href="/nl/savings.html">Besparings-calculator</a></li><li><a href="/nl/download.html">Download</a></li></ul></div>
-<div class="footer-col"><h4>Juridisch</h4><ul><li><a href="/nl/privacy.html">Privacy</a></li><li><a href="/nl/terms.html">Voorwaarden</a></li><li><a href="/nl/contact.html">Contact</a></li></ul></div>
+<div class="footer-col"><h4>Juridisch</h4><ul><li><a href="/nl/privacy.html">Privacy</a></li><li><a href="/nl/terms.html">Voorwaarden</a></li><li><a href="/nl/delete-data.html">Gegevens verwijderen</a></li><li><a href="/nl/contact.html">Contact</a></li></ul></div>
 </div>
 <div class="footer-bottom"><span>© 2026 Grounded Studio · Gemaakt met zorg in Nederland</span><span>freshgarant.app</span></div>
 </div></footer>

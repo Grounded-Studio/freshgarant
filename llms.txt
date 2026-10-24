@@ -40,5 +40,6 @@ FreshGarant helps households stop wasting food and money. Users add groceries by
 - Features: https://freshgarant.app/features.html
 - Savings calculator: https://freshgarant.app/savings.html
 - Privacy policy: https://freshgarant.app/privacy.html
+- Delete your data: https://freshgarant.app/delete-data.html
 - Contact: contact@grounded-studio.app
 - Developer: Grounded Studio — https://grounded-studio.app
