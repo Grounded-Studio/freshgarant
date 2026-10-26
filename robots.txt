@@ -1,5 +1,7 @@
 # Allow all search engines to crawl everything.
 User-agent: *
 Allow: /
+# Cloudflare-internal paths (e.g. email obfuscation links) aren't pages.
+Disallow: /cdn-cgi/
 
 Sitemap: https://freshgarant.app/sitemap.xml
