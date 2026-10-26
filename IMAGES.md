@@ -15,7 +15,7 @@ dimensions are the maximum the site uses; browsers auto-scale down.
 | `logo.svg` | Main FreshGarant logo (leaf + wordmark) | SVG, any size |
 | `logo-mark.svg` | Icon only, no wordmark — favicon + headers | SVG, square |
 | `favicon.ico` | Browser tab icon (optional, SVG works too) | 32×32 |
-| `og-image.png` | Social preview (WhatsApp / Twitter / LinkedIn link cards) | 1200×630, JPG also OK |
+| `og-image.jpg` | Social preview (WhatsApp / Twitter / LinkedIn link cards) | 1200×630 JPG, keep < 300 KB (WhatsApp) |
 
 > SVG placeholders for `logo.svg`, `logo-mark.svg` and `og-image.svg`
 > are already in the repo — replace them when you have the real assets.
@@ -67,7 +67,7 @@ them in a phone frame on the pages that use them.
 
 | Filename | What | Size |
 |---|---|---|
-| `calc-illustration.png` | Side illustration: coins + fresh food basket | 800×800, transparent BG |
+| `calc-illustration.webp` | Side illustration: coins + fresh food basket | 800×800, transparent BG |
 
 Optional — if omitted, the page just shows the sliders + numbers.
 
@@ -77,9 +77,9 @@ Optional — if omitted, the page just shows the sliders + numbers.
 
 | Filename | What |
 |---|---|
-| `play-store-badge-en.png` | Official "Get it on Google Play" badge (English) |
-| `play-store-badge-nl.png` | Official "Ontdek het op Google Play" badge (Dutch) |
-| `qr-play-store.png` | QR code pointing at the Play Store listing (512×512 PNG, black on white) |
+| `play-store-badge-en.webp` | Official "Get it on Google Play" badge (English) |
+| `play-store-badge-nl.webp` | Official "Ontdek het op Google Play" badge (Dutch) |
+| `qr-play-store.svg` | QR code pointing at the Play Store listing (SVG, brand green on white) |
 
 > Official Google badges: <https://play.google.com/intl/en_us/badges/>
 
@@ -99,3 +99,10 @@ Optional — if omitted, the page just shows the sliders + numbers.
 2. Open the affected HTML page in a browser to verify.
 3. `git add images/<file>` → `git commit` → `git push`.
 4. Cloudflare Pages auto-redeploys within ~1 minute.
+
+---
+
+## App screenshots are generated
+
+The `hero-shot-*` and `shot-*` images (WebP, EN in `assets/.../`, NL in `assets/.../nl/`) are rendered by the app repo:
+`.\scripts\screenshots.ps1 -Website` in `C:\versgarant` (demo mode on the emulator). Don't edit them by hand.
