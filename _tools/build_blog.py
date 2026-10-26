@@ -15,7 +15,7 @@ from blog_content import ARTICLES, PUBLISHED  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://freshgarant.app"
-CSS_V = "2026102604"
+CSS_V = "2026102605"
 PLAY = "https://play.google.com/store/apps/details?id=app.rork.versgarant"
 
 T = {
@@ -25,7 +25,7 @@ T = {
     "blog_h1": "Tips to keep food fresh and waste less",
     "blog_desc": "Practical guides on expiry dates, how long food lasts in the fridge and freezer, and how to reduce food waste at home.",
     "blog_lead": "Clear answers to the questions everyone has in front of the fridge: is this still good, can I freeze it, and how do I stop throwing food away?",
-    "kicker": "BLOG", "read": "Read article →", "min": "min read", "back": "← All articles",
+    "kicker": "BLOG", "read": "Read article →", "min": "min read",
     "related": "Read next", "updated": "Published",
     "note": "These are general guidelines for food stored at the right temperature. Always follow the instructions on the packaging, and when in doubt, throw it out. Sources: Voedingscentrum (Netherlands Nutrition Centre) and the EU rules on date marking.",
     "cta_h": "Never forget what's in your fridge",
@@ -45,7 +45,7 @@ T = {
     "blog_h1": "Tips om eten vers te houden en minder te verspillen",
     "blog_desc": "Praktische uitleg over THT en TGT, hoe lang eten goed blijft in koelkast en vriezer, en hoe je voedselverspilling thuis tegengaat.",
     "blog_lead": "Duidelijke antwoorden op de vragen die iedereen heeft voor de koelkast: is dit nog goed, kan ik het invriezen, en hoe gooi ik minder weg?",
-    "kicker": "BLOG", "read": "Lees artikel →", "min": "min lezen", "back": "← Alle artikelen",
+    "kicker": "BLOG", "read": "Lees artikel →", "min": "min lezen",
     "related": "Lees ook", "updated": "Gepubliceerd",
     "note": "Dit zijn algemene richtlijnen voor eten dat op de juiste temperatuur is bewaard. Volg altijd de aanwijzingen op de verpakking, en twijfel je: weggooien. Bronnen: Voedingscentrum en de EU-regels voor datumaanduiding.",
     "cta_h": "Vergeet nooit meer wat er in je koelkast ligt",
@@ -159,6 +159,15 @@ def minutes(body):
     return max(2, round(words / 200))
 
 
+def crumbs(lang, items):
+    """Visible breadcrumb trail; the last item (href None) is the current page."""
+    lis = "".join(
+        f'<li><a href="{h}">{html.escape(n)}</a></li>' if h else f'<li><span aria-current="page">{html.escape(n)}</span></li>'
+        for n, h in items)
+    aria = "Breadcrumb" if lang == "en" else "Kruimelpad"
+    return f'    <nav class="breadcrumb" aria-label="{aria}"><ol>{lis}</ol></nav>'
+
+
 def breadcrumb(lang, items):
     return {"@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": i + 1, "name": n, "item": SITE + u} for i, (n, u) in enumerate(items)]}
@@ -177,7 +186,7 @@ def article_page(lang, art):
          "author": {"@type": "Organization", "name": "Grounded Studio", "url": "https://grounded-studio.app/"},
          "publisher": {"@type": "Organization", "name": "Grounded Studio", "url": "https://grounded-studio.app/",
                        "logo": {"@type": "ImageObject", "url": SITE + "/assets/icons/icon_512.png"}}},
-        breadcrumb(lang, [("FreshGarant", t["home"]), ("Blog", url_of(lang)), (a["title"], path)]),
+        breadcrumb(lang, [("Home", t["home"]), ("Blog", url_of(lang)), (a["title"], path)]),
     ]}
     related = "".join(
         f'<li><a href="{url_of(lang, o[lang]["slug"])}">{html.escape(o[lang]["title"])}</a></li>'
@@ -186,8 +195,8 @@ def article_page(lang, art):
 <main>
 <section class="section">
   <div class="container">
-    <p class="blog-meta"><a href="{url_of(lang)}">{t['back']}</a></p>
-    <span class="section-kicker" style="margin-top: 20px;">{a['kicker']}</span>
+{crumbs(lang, [("Home", t["home"]), ("Blog", url_of(lang)), (a["title"], None)])}
+    <span class="section-kicker">{a['kicker']}</span>
     <h1>{html.escape(a['title'])}</h1>
     <p class="blog-meta">{t['updated']} {t['date']} · {minutes(a['body'])} {t['min']}</p>
     <p class="blog-lead">{a['intro']}</p>
@@ -220,12 +229,13 @@ def index_page(lang):
          "publisher": {"@type": "Organization", "name": "Grounded Studio", "url": "https://grounded-studio.app/"},
          "blogPost": [{"@type": "BlogPosting", "headline": art[lang]["title"], "url": SITE + url_of(lang, art[lang]["slug"]),
                        "datePublished": PUBLISHED} for art in ARTICLES]},
-        breadcrumb(lang, [("FreshGarant", t["home"]), ("Blog", url_of(lang))]),
+        breadcrumb(lang, [("Home", t["home"]), ("Blog", url_of(lang))]),
     ]}
     return head(lang, t["blog_title"], t["blog_desc"], url_of("en"), url_of("nl"), "website", ld) + f"""
 <main>
 <section class="section">
   <div class="container">
+{crumbs(lang, [("Home", t["home"]), ("Blog", None)])}
     <span class="section-kicker">{t['kicker']}</span>
     <h1 class="section-title">{t['blog_h1']}</h1>
     <p class="section-sub">{t['blog_lead']}</p>
