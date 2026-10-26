@@ -134,5 +134,95 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/delete-data.html" />
     <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/delete-data.html" />
   </url>
+  <url>
+    <loc>https://freshgarant.app/blog/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/blog/</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/blog/best-before-vs-use-by.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/best-before-vs-use-by.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/tht-tgt-verschil.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/best-before-vs-use-by.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/blog/tht-tgt-verschil.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/best-before-vs-use-by.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/tht-tgt-verschil.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/best-before-vs-use-by.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/blog/how-long-does-food-last-in-the-fridge.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/how-long-does-food-last-in-the-fridge.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/hoe-lang-houdbaar-koelkast.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/how-long-does-food-last-in-the-fridge.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/blog/hoe-lang-houdbaar-koelkast.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/how-long-does-food-last-in-the-fridge.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/hoe-lang-houdbaar-koelkast.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/how-long-does-food-last-in-the-fridge.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/blog/what-food-can-you-freeze.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/what-food-can-you-freeze.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/wat-kun-je-invriezen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/what-food-can-you-freeze.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/blog/wat-kun-je-invriezen.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/what-food-can-you-freeze.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/wat-kun-je-invriezen.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/what-food-can-you-freeze.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/blog/reduce-food-waste-at-home.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/reduce-food-waste-at-home.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/voedselverspilling-tegengaan-tips.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/reduce-food-waste-at-home.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/blog/voedselverspilling-tegengaan-tips.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/reduce-food-waste-at-home.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/voedselverspilling-tegengaan-tips.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/reduce-food-waste-at-home.html" />
+  </url>
 
 </urlset>

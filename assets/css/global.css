@@ -603,6 +603,26 @@ img { max-width: 100%; display: block; }
 .prose li { margin-bottom: 6px; }
 .prose a { color: var(--fg-primary); text-decoration: underline; text-underline-offset: 2px; }
 .prose strong { color: var(--fg-primary-dark); }
+.prose ol { color: var(--fg-text); font-size: 15px; line-height: 1.65; padding-left: 22px; margin: 0 0 1em; }
+/* Tables scroll sideways on phones instead of widening the page. */
+.prose .table-wrap { overflow-x: auto; margin: 16px 0 24px; border-radius: var(--fg-radius-md); border: 1px solid rgba(27, 94, 32, 0.1); background: var(--fg-surface); }
+.prose table { width: 100%; border-collapse: collapse; font-size: 14.5px; min-width: 420px; }
+.prose th, .prose td { text-align: left; padding: 10px 14px; border-bottom: 1px solid rgba(27, 94, 32, 0.08); vertical-align: top; }
+.prose th { background: var(--fg-surface-alt); color: var(--fg-primary-dark); font-weight: 700; }
+.prose tr:last-child td { border-bottom: none; }
+
+/* Blog */
+.blog-meta { color: var(--fg-text-faint); font-size: 13px; margin: 0; }
+.blog-lead { color: var(--fg-text-muted); font-size: 1.12rem; line-height: 1.6; max-width: 760px; margin: 16px 0 0; }
+.blog-note { max-width: 760px; margin: 32px 0 0; padding: 14px 18px; border-radius: var(--fg-radius-md); background: var(--fg-primary-50); color: var(--fg-text-muted); font-size: 13.5px; line-height: 1.55; }
+.blog-card { display: flex; flex-direction: column; color: inherit; text-decoration: none; }
+.blog-card:hover { text-decoration: none; box-shadow: var(--fg-shadow-md); }
+.blog-card .section-kicker { margin-bottom: 8px; }
+.blog-card .read-more { margin-top: auto; padding-top: 16px; font-weight: 700; color: var(--fg-primary); font-size: 14px; }
+.blog-related { max-width: 760px; margin-top: 40px; }
+.blog-related h2 { font-size: 1.2rem; margin-bottom: 12px; }
+.blog-related ul { padding-left: 22px; }
+.blog-related li { margin-bottom: 6px; }
 
 /* Contact — form left, info cards right */
 .contact-layout { display: grid; gap: 24px; grid-template-columns: 1fr; align-items: start; }
