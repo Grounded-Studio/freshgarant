@@ -6,6 +6,8 @@ FreshGarant helps households stop wasting food and money. Users add groceries by
 
 ## Core features
 
+- **What's for dinner? (new)** — one photo of your fridge (or the current stock) → three dinners you can make tonight, using what expires first; recognised products go into the inventory in one tap. Free once a day, PRO up to ten times
+- **My kitchen** — fridge, freezer, pantry and fruit bowl at a glance, colour-coded by freshness
 - **Barcode scanner** — fills in product name, brand, category, storage location and expiry date
 - **Daily expiry reminders** — morning digest of what expires today, tomorrow and this week, with freeze-it tips
 - **"Use these first"** — home screen shows which products to use today

@@ -677,3 +677,17 @@ img { max-width: 100%; display: block; }
   border: none; border-radius: var(--fg-radius-pill); padding: 6px 12px;
 }
 .copy-btn:hover { background: var(--fg-primary-100); }
+
+/* What's for dinner? — the headline feature, right under the hero */
+.tonight-section { background: linear-gradient(180deg, var(--fg-surface-alt), transparent); }
+.tonight-grid { gap: 48px; align-items: center; }
+.tonight-list { list-style: none; padding: 0; margin: 0 0 20px; display: grid; gap: 16px; }
+.tonight-list li { background: var(--fg-surface); border-radius: var(--fg-radius-md); padding: 16px 18px; box-shadow: var(--fg-shadow-sm); color: var(--fg-text-muted); font-size: 15px; line-height: 1.5; }
+.tonight-list strong { display: block; color: var(--fg-text); font-size: 16px; margin-bottom: 2px; }
+.tonight-note { color: var(--fg-text-muted); font-size: 14px; }
+.tonight-phones { display: flex; gap: 18px; justify-content: center; }
+.tonight-phones .phone { flex: 1 1 0; max-width: 260px; }
+.tonight-phones .phone:last-child { margin-top: 48px; }
+@media (max-width: 720px) {
+  .tonight-phones .phone:last-child { margin-top: 28px; }
+}

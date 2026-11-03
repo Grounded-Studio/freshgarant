@@ -15,7 +15,7 @@ from blog_content import ARTICLES, PUBLISHED  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://freshgarant.app"
-CSS_V = "2026102605"
+CSS_V = "2026110401"
 PLAY = "https://play.google.com/store/apps/details?id=app.rork.versgarant"
 
 T = {
