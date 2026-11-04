@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="FreshGarant" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="stylesheet" href="/assets/css/global.css?v=2026110401" />
+<link rel="stylesheet" href="/assets/css/global.css?v=2026110402" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -107,6 +107,7 @@
   ]
 }
 </script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoObject", "name": "How to Stop Wasting Food: Free Fridge & AI Expiry Tracker App", "description": "FreshGarant tracks the expiry dates of everything in your fridge, freezer and pantry, warns you before food goes off and helps you plan meals around what you already have.", "thumbnailUrl": "https://freshgarant.app/assets/images/video-thumb-1280.webp", "uploadDate": "2026-11-01T08:00:37-08:00", "duration": "PT1M20S", "embedUrl": "https://www.youtube-nocookie.com/embed/ek1JI7F_qdc", "contentUrl": "https://www.youtube.com/watch?v=ek1JI7F_qdc", "publisher": {"@type": "Organization", "name": "Grounded Studio", "url": "https://grounded-studio.app/"}}</script>
 </head>
 <body>
 
@@ -175,6 +176,22 @@
         <div class="phone"><img width="400" height="893" src="/assets/images/shot-tonight-dish.webp?v=2026110401" alt="Recipe using products from your kitchen" loading="lazy" /></div>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="section video-section">
+  <div class="container">
+    <span class="section-kicker">SEE IT IN ACTION</span>
+    <h2 class="section-title">Stop wasting food in 80 seconds.</h2>
+    <p class="section-sub">See how FreshGarant tracks every expiry date in your fridge, freezer and pantry, warns you in time and helps you cook with what you have.</p>
+    <div class="yt-video">
+      <a href="https://www.youtube.com/watch?v=ek1JI7F_qdc" data-yt="ek1JI7F_qdc" aria-label="Play video: FreshGarant in 80 seconds">
+        <img src="/assets/images/video-thumb-1280.webp" srcset="/assets/images/video-thumb-640.webp 640w, /assets/images/video-thumb-1280.webp 1280w" sizes="(max-width: 920px) 100vw, 880px" width="1280" height="720" alt="FreshGarant video: stop wasting food" loading="lazy" decoding="async">
+        <span class="yt-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.6-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg></span>
+        <span class="yt-badge">1:20 · Watch on YouTube</span>
+      </a>
+    </div>
+    <p class="yt-note">The video loads from YouTube (privacy-enhanced mode) once you press play.</p>
   </div>
 </section>
 
@@ -361,5 +378,18 @@
   </div>
 </footer>
 
+<script>
+document.querySelectorAll('.yt-video a[data-yt]').forEach(function (a) {
+  a.addEventListener('click', function (e) {
+    e.preventDefault();
+    var f = document.createElement('iframe');
+    f.src = 'https://www.youtube-nocookie.com/embed/' + a.dataset.yt + '?autoplay=1&rel=0';
+    f.title = a.getAttribute('aria-label');
+    f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    f.allowFullScreen = true;
+    a.replaceWith(f);
+  });
+});
+</script>
 </body>
 </html>
