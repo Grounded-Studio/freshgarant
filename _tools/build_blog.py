@@ -181,7 +181,7 @@ def article_page(lang, art):
     body = a["body"].strip().replace("<table>", '<div class="table-wrap"><table>').replace("</table>", "</table></div>")
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "Article", "headline": a["title"], "description": a["desc"], "inLanguage": lang,
-         "datePublished": PUBLISHED, "dateModified": PUBLISHED, "mainEntityOfPage": SITE + path,
+         "datePublished": art.get("published", PUBLISHED), "dateModified": art.get("published", PUBLISHED), "mainEntityOfPage": SITE + path,
          "image": SITE + "/assets/images/og-image.jpg",
          "author": {"@type": "Organization", "name": "Grounded Studio", "url": "https://grounded-studio.app/"},
          "publisher": {"@type": "Organization", "name": "Grounded Studio", "url": "https://grounded-studio.app/",
@@ -198,7 +198,7 @@ def article_page(lang, art):
 {crumbs(lang, [("Home", t["home"]), ("Blog", url_of(lang)), (a["title"], None)])}
     <span class="section-kicker">{a['kicker']}</span>
     <h1>{html.escape(a['title'])}</h1>
-    <p class="blog-meta">{t['updated']} {t['date']} · {minutes(a['body'])} {t['min']}</p>
+    <p class="blog-meta">{t['updated']} {a.get('date', t['date'])} · {minutes(a['body'])} {t['min']}</p>
     <p class="blog-lead">{a['intro']}</p>
 
     <article class="prose" style="margin-top: 32px;">
@@ -228,7 +228,7 @@ def index_page(lang):
         {"@type": "Blog", "name": t["blog_h1"], "description": t["blog_desc"], "inLanguage": lang, "url": SITE + url_of(lang),
          "publisher": {"@type": "Organization", "name": "Grounded Studio", "url": "https://grounded-studio.app/"},
          "blogPost": [{"@type": "BlogPosting", "headline": art[lang]["title"], "url": SITE + url_of(lang, art[lang]["slug"]),
-                       "datePublished": PUBLISHED} for art in ARTICLES]},
+                       "datePublished": art.get("published", PUBLISHED)} for art in ARTICLES]},
         breadcrumb(lang, [("Home", t["home"]), ("Blog", url_of(lang))]),
     ]}
     return head(lang, t["blog_title"], t["blog_desc"], url_of("en"), url_of("nl"), "website", ld) + f"""

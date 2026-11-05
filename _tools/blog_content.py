@@ -414,3 +414,7 @@ ARTICLES = [
     },
   },
 ]
+
+
+from blog_content_nov import ARTICLES_NOV  # noqa: E402
+ARTICLES = ARTICLES_NOV + ARTICLES

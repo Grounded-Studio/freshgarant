@@ -42,6 +42,9 @@ FreshGarant helps households stop wasting food and money. Users add groceries by
 - Features: https://freshgarant.app/features.html
 - Savings calculator: https://freshgarant.app/savings.html
 - Blog (food storage and food waste guides): https://freshgarant.app/blog/ · Dutch: https://freshgarant.app/nl/blog/
+  - What to Cook Tonight With What's in Your Fridge: https://freshgarant.app/blog/what-to-cook-with-whats-in-your-fridge.html
+  - How to Keep Track of the Food You Have at Home: https://freshgarant.app/blog/keep-track-of-food-at-home.html
+  - 4 Ways to Log Your Groceries in Under a Minute: https://freshgarant.app/blog/log-groceries-in-one-minute.html
   - Best Before vs Use By: What's the Difference?: https://freshgarant.app/blog/best-before-vs-use-by.html
   - How Long Does Food Last in the Fridge? (Chart): https://freshgarant.app/blog/how-long-does-food-last-in-the-fridge.html
   - What Food Can You Freeze, and for How Long?: https://freshgarant.app/blog/what-food-can-you-freeze.html

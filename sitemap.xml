@@ -136,7 +136,7 @@
   </url>
   <url>
     <loc>https://freshgarant.app/blog/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/" />
@@ -145,12 +145,66 @@
   </url>
   <url>
     <loc>https://freshgarant.app/nl/blog/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/" />
     <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/blog/what-to-cook-with-whats-in-your-fridge.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/what-to-cook-with-whats-in-your-fridge.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/wat-eet-ik-vanavond-koken-met-wat-je-hebt.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/what-to-cook-with-whats-in-your-fridge.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/blog/wat-eet-ik-vanavond-koken-met-wat-je-hebt.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/what-to-cook-with-whats-in-your-fridge.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/wat-eet-ik-vanavond-koken-met-wat-je-hebt.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/what-to-cook-with-whats-in-your-fridge.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/blog/keep-track-of-food-at-home.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/keep-track-of-food-at-home.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/overzicht-voorraad-thuis-bijhouden.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/keep-track-of-food-at-home.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/blog/overzicht-voorraad-thuis-bijhouden.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/keep-track-of-food-at-home.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/overzicht-voorraad-thuis-bijhouden.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/keep-track-of-food-at-home.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/blog/log-groceries-in-one-minute.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/log-groceries-in-one-minute.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/boodschappen-invoeren-in-een-minuut.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/log-groceries-in-one-minute.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/blog/boodschappen-invoeren-in-een-minuut.html</loc>
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/blog/log-groceries-in-one-minute.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/blog/boodschappen-invoeren-in-een-minuut.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/blog/log-groceries-in-one-minute.html" />
   </url>
   <url>
     <loc>https://freshgarant.app/blog/best-before-vs-use-by.html</loc>
