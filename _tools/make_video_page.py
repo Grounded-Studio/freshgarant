@@ -13,10 +13,10 @@ import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://freshgarant.app"
-YT = "ek1JI7F_qdc"
+YT = "a66ORi159Go"
 PLAY = "https://play.google.com/store/apps/details?id=app.rork.versgarant"
 
-TITLE = "FreshGarant Video: Stop Wasting Food in 80 Seconds"
+TITLE = "FreshGarant Video: Never Waste Food Again"
 DESC = ("Watch how FreshGarant tracks the expiry dates in your fridge, freezer and pantry, "
         "warns you before food goes off and helps you cook with what you already have.")
 
@@ -31,10 +31,10 @@ beacon = re.search(r"<!-- Cloudflare Web Analytics -->.*?<!-- End Cloudflare Web
 
 video_ld = {
     "@context": "https://schema.org", "@type": "VideoObject",
-    "name": "How to Stop Wasting Food: Free Fridge & AI Expiry Tracker App",
+    "name": "FreshGarant – Never Waste Food Again | Expiry Tracker, AI Recipes & Meal Planner",
     "description": DESC,
-    "thumbnailUrl": [f"{SITE}/assets/images/video-thumb-1280.webp", f"https://i.ytimg.com/vi/{YT}/maxresdefault.jpg"],
-    "uploadDate": "2026-11-01T08:00:37-08:00", "duration": "PT1M20S",
+    "thumbnailUrl": [f"{SITE}/assets/images/video-thumb-1280.webp?v=20261114", f"https://i.ytimg.com/vi/{YT}/maxresdefault.jpg"],
+    "uploadDate": "2026-11-12T13:52:30-08:00", "duration": "PT1M39S",
     "embedUrl": f"https://www.youtube-nocookie.com/embed/{YT}",
     "contentUrl": f"https://www.youtube.com/watch?v={YT}",
     "publisher": {"@type": "Organization", "name": "Grounded Studio", "url": "https://grounded-studio.app/",
@@ -57,7 +57,7 @@ page = f"""<!doctype html>
 <link rel="canonical" href="{SITE}/video.html" />
 <meta property="og:title" content="{TITLE}" />
 <meta property="og:description" content="{DESC}" />
-<meta property="og:image" content="{SITE}/assets/images/video-thumb-1280.webp" />
+<meta property="og:image" content="{SITE}/assets/images/video-thumb-1280.webp?v=20261114" />
 <meta property="og:type" content="video.other" />
 <meta property="og:video" content="https://www.youtube.com/embed/{YT}" />
 <meta property="og:site_name" content="FreshGarant" />
@@ -74,9 +74,9 @@ page = f"""<!doctype html>
 <section class="section video-section">
   <div class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><span aria-current="page">Video</span></li></ol></nav>
-    <h1 class="section-title" style="text-align:center;">Stop wasting food in 80 seconds</h1>
+    <h1 class="section-title" style="text-align:center;">Never waste food again</h1>
     <div class="yt-video" style="margin-top: 28px;">
-      <iframe src="https://www.youtube-nocookie.com/embed/{YT}?rel=0" title="FreshGarant: stop wasting food in 80 seconds" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="eager"></iframe>
+      <iframe src="https://www.youtube-nocookie.com/embed/{YT}?rel=0" title="FreshGarant: never waste food again" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="eager"></iframe>
     </div>
     <p class="yt-note">Plays from YouTube in privacy-enhanced mode. <a href="https://www.youtube.com/watch?v={YT}" target="_blank" rel="noopener">Watch on YouTube</a></p>
 
