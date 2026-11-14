@@ -260,3 +260,36 @@ for lang in ("en", "nl"):
     write(f"{T[lang]['prefix'].lstrip('/')}/blog/index.html".lstrip("/"), index_page(lang))
     for art in ARTICLES:
         write(f"{T[lang]['prefix'].lstrip('/')}/blog/{art[lang]['slug']}.html".lstrip("/"), article_page(lang, art))
+
+# ── Latest articles on the homepages (between BLOG:START / BLOG:END) ──
+HOME_BLOG = {
+    "en": ("FROM THE BLOG", "Tips to waste less food", "All articles →", "index.html"),
+    "nl": ("VAN DE BLOG", "Tips om minder te verspillen", "Alle artikelen →", "nl/index.html"),
+}
+for lang, (kicker, title, all_label, page) in HOME_BLOG.items():
+    t = T[lang]
+    cards = "\n".join(f"""      <a class="feature-card blog-card" href="{url_of(lang, art[lang]['slug'])}">
+        <span class="section-kicker">{art[lang]['kicker']}</span>
+        <h3>{html.escape(art[lang]['title'])}</h3>
+        <p>{html.escape(art[lang]['desc'])}</p>
+        <span class="read-more">{t['read']}</span>
+      </a>""" for art in ARTICLES[:6])
+    block = f"""<!-- BLOG:START -->
+<section class="section">
+  <div class="container">
+    <span class="section-kicker">{kicker}</span>
+    <h2 class="section-title">{title}</h2>
+    <div class="grid grid-2 feature-grid">
+{cards}
+    </div>
+    <p style="margin-top: 24px;"><a href="{url_of(lang)}" style="font-weight: 700;">{all_label}</a></p>
+  </div>
+</section>
+<!-- BLOG:END -->"""
+    full = os.path.join(ROOT, page)
+    with open(full, encoding="utf-8", newline="") as f:
+        s = f.read()
+    s = re.sub(r"<!-- BLOG:START -->.*?<!-- BLOG:END -->", lambda m: block, s, count=1, flags=re.S)
+    with open(full, "w", encoding="utf-8", newline="") as f:
+        f.write(s)
+    print("homepage blog block", page)
