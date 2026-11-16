@@ -725,3 +725,20 @@ img { max-width: 100%; display: block; }
 .hero-triptych .tphone-center img {
   filter: drop-shadow(0 30px 44px rgba(27, 94, 32, 0.30)) drop-shadow(0 10px 18px rgba(15, 23, 42, 0.18));
 }
+
+/* Pricing (homepage) */
+.pricing-grid { margin: 32px 0 20px; align-items: stretch; }
+.price-card h3 { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.price-card-pro { border: 2px solid var(--fg-accent-amber); }
+.price { margin: 0 0 4px; color: var(--fg-text-muted); }
+.price strong { font-size: 2.2rem; font-weight: 800; color: var(--fg-primary-dark); margin-right: 4px; }
+.price-alt { margin: 0 0 12px; font-size: 14px; color: var(--fg-text-muted); }
+.price-list { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 10px; }
+.price-list li { position: relative; padding-left: 28px; }
+.price-list li::before { content: "\2713"; position: absolute; left: 0; top: 0; font-weight: 800; color: var(--fg-primary); }
+.price-note { font-size: 14px; color: var(--fg-text-muted); max-width: 720px; margin: 0 0 20px; }
+.section-sub a { color: var(--fg-primary-dark); text-decoration: underline; }
+/* Reviews (hidden until real reviews exist) */
+.review { margin: 0; background: var(--fg-surface); border-radius: var(--fg-radius-lg); padding: 24px; box-shadow: var(--fg-shadow-sm); }
+.review blockquote { margin: 0 0 12px; font-size: 15px; }
+.review figcaption { font-size: 13px; color: var(--fg-text-muted); }
