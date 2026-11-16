@@ -41,6 +41,27 @@ FreshGarant helps households stop wasting food and money. Users add groceries by
 - Website (Dutch): https://freshgarant.app/nl/
 - Features: https://freshgarant.app/features.html
 - Savings calculator: https://freshgarant.app/savings.html
+- Storage guides (how long food lasts, per product, based on Voedingscentrum and the UK Food Standards Agency): https://freshgarant.app/guides/ · Dutch: https://freshgarant.app/nl/gidsen/
+  - How long does cooked rice last in the fridge?: https://freshgarant.app/guides/how-long-does-cooked-rice-last.html
+  - How long does mince (ground beef) last in the fridge?: https://freshgarant.app/guides/how-long-does-mince-last.html
+  - How long does chicken last in the fridge?: https://freshgarant.app/guides/how-long-does-chicken-last.html
+  - How long does milk last after opening?: https://freshgarant.app/guides/how-long-does-milk-last.html
+  - How long does yoghurt last after opening?: https://freshgarant.app/guides/how-long-does-yoghurt-last.html
+  - How long does cheese last in the fridge?: https://freshgarant.app/guides/how-long-does-cheese-last.html
+  - How long do eggs last in the fridge?: https://freshgarant.app/guides/how-long-do-eggs-last.html
+  - How long does whipping cream last after opening?: https://freshgarant.app/guides/how-long-does-whipping-cream-last.html
+  - How long does bread last?: https://freshgarant.app/guides/how-long-does-bread-last.html
+  - How long does lettuce last in the fridge?: https://freshgarant.app/guides/how-long-does-lettuce-last.html
+  - How long do potatoes last?: https://freshgarant.app/guides/how-long-do-potatoes-last.html
+  - How long does cooked pasta last in the fridge?: https://freshgarant.app/guides/how-long-does-cooked-pasta-last.html
+  - How long does homemade soup last in the fridge?: https://freshgarant.app/guides/how-long-does-soup-last.html
+  - How long do leftovers last in the fridge?: https://freshgarant.app/guides/how-long-do-leftovers-last.html
+  - How long does fresh fish last in the fridge?: https://freshgarant.app/guides/how-long-does-fish-last.html
+  - How long does sliced ham last after opening?: https://freshgarant.app/guides/how-long-does-ham-last.html
+  - How long do strawberries last?: https://freshgarant.app/guides/how-long-do-strawberries-last.html
+  - How long do bananas last?: https://freshgarant.app/guides/how-long-do-bananas-last.html
+  - How long do avocados last?: https://freshgarant.app/guides/how-long-do-avocados-last.html
+  - How long do tomatoes last?: https://freshgarant.app/guides/how-long-do-tomatoes-last.html
 - Blog (food storage and food waste guides): https://freshgarant.app/blog/ · Dutch: https://freshgarant.app/nl/blog/
   - What to Cook Tonight With What's in Your Fridge: https://freshgarant.app/blog/what-to-cook-with-whats-in-your-fridge.html
   - How to Keep Track of the Food You Have at Home: https://freshgarant.app/blog/keep-track-of-food-at-home.html

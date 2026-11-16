@@ -15,7 +15,7 @@ from blog_content import ARTICLES, PUBLISHED  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://freshgarant.app"
-CSS_V = "2026111602"
+CSS_V = "2026111603"
 PLAY = "https://play.google.com/store/apps/details?id=app.rork.versgarant"
 
 T = {
@@ -33,7 +33,7 @@ T = {
     "cta_btn": "Download FreshGarant free →",
     "tagline": "Scan your groceries. Cook what's fresh. Never waste food again.",
     "product": "Product", "legal": "Legal",
-    "f_product": [("/features.html", "All features"), ("/savings.html", "Savings calculator"), ("/blog/", "Blog"), ("/download.html", "Download the app")],
+    "f_product": [("/features.html", "All features"), ("/savings.html", "Savings calculator"), ("/blog/", "Blog"), ("/guides/", "Storage guides"), ("/download.html", "Download the app")],
     "f_legal": [("/privacy.html", "Privacy"), ("/terms.html", "Terms"), ("/delete-data.html", "Delete your data"), ("/contact.html", "Contact")],
     "copy": "© 2026 Grounded Studio · Made with care in the Netherlands",
     "also": 'Also by us: <a href="https://buildexact.app/">BuildExact</a> · <a href="https://circuittrace.app/">Circuit Trace</a>',
@@ -53,7 +53,7 @@ T = {
     "cta_btn": "Download FreshGarant gratis →",
     "tagline": "Scan je boodschappen. Kook wat vers is. Nooit meer eten weggooien.",
     "product": "Product", "legal": "Juridisch",
-    "f_product": [("/nl/features.html", "Alle functies"), ("/nl/savings.html", "Besparings-calculator"), ("/nl/blog/", "Blog"), ("/nl/download.html", "App downloaden")],
+    "f_product": [("/nl/features.html", "Alle functies"), ("/nl/savings.html", "Besparings-calculator"), ("/nl/blog/", "Blog"), ("/nl/gidsen/", "Bewaargidsen"), ("/nl/download.html", "App downloaden")],
     "f_legal": [("/nl/privacy.html", "Privacy"), ("/nl/terms.html", "Voorwaarden"), ("/nl/delete-data.html", "Gegevens verwijderen"), ("/nl/contact.html", "Contact")],
     "copy": "© 2026 Grounded Studio · Gemaakt met zorg in Nederland",
     "also": 'Ook van ons: <a href="https://buildexact.app/nl/">BuildExact</a> · <a href="https://circuittrace.app/">Circuit Trace</a>',
@@ -112,10 +112,10 @@ def head(lang, title, desc, path_en, path_nl, og_type, ld):
 """
 
 
-def nav(lang):
+def nav(lang, active_suffix="/blog/"):
     out = []
     for href, label in T[lang]["nav"]:
-        active = ' class="active"' if href.endswith("/blog/") else ""
+        active = ' class="active"' if active_suffix and href.endswith(active_suffix) else ""
         out.append(f'      <a href="{href}"{active}>{label}</a>')
     return "\n".join(out)
 
@@ -258,25 +258,26 @@ def write(rel, text):
     print("wrote", rel)
 
 
-for lang in ("en", "nl"):
-    write(f"{T[lang]['prefix'].lstrip('/')}/blog/index.html".lstrip("/"), index_page(lang))
-    for art in ARTICLES:
-        write(f"{T[lang]['prefix'].lstrip('/')}/blog/{art[lang]['slug']}.html".lstrip("/"), article_page(lang, art))
+def main():
+    for lang in ("en", "nl"):
+        write(f"{T[lang]['prefix'].lstrip('/')}/blog/index.html".lstrip("/"), index_page(lang))
+        for art in ARTICLES:
+            write(f"{T[lang]['prefix'].lstrip('/')}/blog/{art[lang]['slug']}.html".lstrip("/"), article_page(lang, art))
 
-# ── Latest articles on the homepages (between BLOG:START / BLOG:END) ──
-HOME_BLOG = {
-    "en": ("FROM THE BLOG", "Tips to waste less food", "All articles →", "index.html"),
-    "nl": ("VAN DE BLOG", "Tips om minder te verspillen", "Alle artikelen →", "nl/index.html"),
-}
-for lang, (kicker, title, all_label, page) in HOME_BLOG.items():
-    t = T[lang]
-    cards = "\n".join(f"""      <a class="feature-card blog-card" href="{url_of(lang, art[lang]['slug'])}">
+    # ── Latest articles on the homepages (between BLOG:START / BLOG:END) ──
+    HOME_BLOG = {
+        "en": ("FROM THE BLOG", "Tips to waste less food", "All articles →", "index.html"),
+        "nl": ("VAN DE BLOG", "Tips om minder te verspillen", "Alle artikelen →", "nl/index.html"),
+    }
+    for lang, (kicker, title, all_label, page) in HOME_BLOG.items():
+        t = T[lang]
+        cards = "\n".join(f"""      <a class="feature-card blog-card" href="{url_of(lang, art[lang]['slug'])}">
         <span class="section-kicker">{art[lang]['kicker']}</span>
         <h3>{html.escape(art[lang]['title'])}</h3>
         <p>{html.escape(art[lang]['desc'])}</p>
         <span class="read-more">{t['read']}</span>
       </a>""" for art in ARTICLES[:6])
-    block = f"""<!-- BLOG:START -->
+        block = f"""<!-- BLOG:START -->
 <section class="section">
   <div class="container">
     <span class="section-kicker">{kicker}</span>
@@ -288,10 +289,14 @@ for lang, (kicker, title, all_label, page) in HOME_BLOG.items():
   </div>
 </section>
 <!-- BLOG:END -->"""
-    full = os.path.join(ROOT, page)
-    with open(full, encoding="utf-8", newline="") as f:
-        s = f.read()
-    s = re.sub(r"<!-- BLOG:START -->.*?<!-- BLOG:END -->", lambda m: block, s, count=1, flags=re.S)
-    with open(full, "w", encoding="utf-8", newline="") as f:
-        f.write(s)
-    print("homepage blog block", page)
+        full = os.path.join(ROOT, page)
+        with open(full, encoding="utf-8", newline="") as f:
+            s = f.read()
+        s = re.sub(r"<!-- BLOG:START -->.*?<!-- BLOG:END -->", lambda m: block, s, count=1, flags=re.S)
+        with open(full, "w", encoding="utf-8", newline="") as f:
+            f.write(s)
+        print("homepage blog block", page)
+
+
+if __name__ == "__main__":
+    main()

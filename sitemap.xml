@@ -285,4 +285,382 @@
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://freshgarant.app/guides/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-does-cooked-rice-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-cooked-rice-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-gekookte-rijst-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-cooked-rice-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-is-gekookte-rijst-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-cooked-rice-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-gekookte-rijst-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-cooked-rice-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-does-mince-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-mince-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-gehakt-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-mince-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-is-gehakt-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-mince-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-gehakt-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-mince-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-does-chicken-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-chicken-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-kip-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-chicken-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-is-kip-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-chicken-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-kip-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-chicken-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-does-milk-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-milk-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-melk-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-milk-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-is-melk-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-milk-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-melk-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-milk-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-does-yoghurt-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-yoghurt-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-yoghurt-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-yoghurt-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-is-yoghurt-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-yoghurt-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-yoghurt-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-yoghurt-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-does-cheese-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-cheese-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-kaas-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-cheese-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-is-kaas-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-cheese-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-kaas-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-cheese-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-do-eggs-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-do-eggs-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-zijn-eieren-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-do-eggs-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-zijn-eieren-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-do-eggs-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-zijn-eieren-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-do-eggs-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-does-whipping-cream-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-whipping-cream-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-slagroom-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-whipping-cream-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-is-slagroom-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-whipping-cream-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-slagroom-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-whipping-cream-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-does-bread-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-bread-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-brood-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-bread-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-is-brood-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-bread-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-brood-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-bread-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-does-lettuce-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-lettuce-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-sla-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-lettuce-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-is-sla-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-lettuce-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-sla-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-lettuce-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-do-potatoes-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-do-potatoes-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-zijn-aardappelen-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-do-potatoes-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-zijn-aardappelen-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-do-potatoes-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-zijn-aardappelen-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-do-potatoes-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-does-cooked-pasta-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-cooked-pasta-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-gekookte-pasta-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-cooked-pasta-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-is-gekookte-pasta-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-cooked-pasta-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-gekookte-pasta-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-cooked-pasta-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-does-soup-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-soup-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-soep-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-soup-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-is-soep-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-soup-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-soep-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-soup-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-do-leftovers-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-do-leftovers-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-zijn-restjes-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-do-leftovers-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-zijn-restjes-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-do-leftovers-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-zijn-restjes-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-do-leftovers-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-does-fish-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-fish-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-vis-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-fish-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-is-vis-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-fish-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-vis-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-fish-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-does-ham-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-ham-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-zijn-vleeswaren-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-ham-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-zijn-vleeswaren-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-does-ham-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-zijn-vleeswaren-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-does-ham-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-do-strawberries-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-do-strawberries-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-zijn-aardbeien-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-do-strawberries-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-zijn-aardbeien-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-do-strawberries-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-zijn-aardbeien-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-do-strawberries-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-do-bananas-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-do-bananas-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-zijn-bananen-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-do-bananas-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-zijn-bananen-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-do-bananas-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-zijn-bananen-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-do-bananas-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-do-avocados-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-do-avocados-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-avocado-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-do-avocados-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-is-avocado-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-do-avocados-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-is-avocado-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-do-avocados-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/guides/how-long-do-tomatoes-last.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-do-tomatoes-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-zijn-tomaten-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-do-tomatoes-last.html" />
+  </url>
+  <url>
+    <loc>https://freshgarant.app/nl/gidsen/hoe-lang-zijn-tomaten-houdbaar.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://freshgarant.app/guides/how-long-do-tomatoes-last.html" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/gidsen/hoe-lang-zijn-tomaten-houdbaar.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://freshgarant.app/guides/how-long-do-tomatoes-last.html" />
+  </url>
 </urlset>

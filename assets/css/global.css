@@ -742,3 +742,10 @@ img { max-width: 100%; display: block; }
 .review { margin: 0; background: var(--fg-surface); border-radius: var(--fg-radius-lg); padding: 24px; box-shadow: var(--fg-shadow-sm); }
 .review blockquote { margin: 0 0 12px; font-size: 15px; }
 .review figcaption { font-size: 13px; color: var(--fg-text-muted); }
+
+/* Storage guides (/guides/, /nl/gidsen/) */
+.guide-answer { max-width: 760px; margin: 20px 0 0; padding: 18px 20px; border-radius: var(--fg-radius-md); background: var(--fg-surface); border-left: 4px solid var(--fg-primary); box-shadow: var(--fg-shadow-sm); font-size: 1.05rem; line-height: 1.6; color: var(--fg-text); }
+.guide-table td:last-child { color: var(--fg-text-muted); font-size: 13px; }
+.guide-faq { margin-top: 8px; }
+.guide-sources a { word-break: break-word; }
+.guide-emoji { font-size: 28px; line-height: 1; margin-bottom: 8px; display: block; }
