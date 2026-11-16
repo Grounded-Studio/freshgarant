@@ -16,8 +16,10 @@ FreshGarant helps households stop wasting food and money. Users add groceries by
 - **Smart shopping list** — shows how many of an item are already in the fridge to prevent duplicate purchases; sort by supermarket aisle
 - **Savings tracking** — shows money saved each time food is used in time, plus a monthly total
 - **Achievements and year in review** — 18 badges, yearly recap including CO₂ prevented
+- **Weekly review** — every Sunday: products used in time, money saved and products thrown away that week
+- **Backup and restore** — save all data as one file and restore it on a new phone
 
-## AI features (PRO, one free trial each for every user)
+## AI features (PRO; every user gets 3 free receipt scans and one free try of each other AI feature)
 
 - **AI Fridge Scan** — one photo, every product recognised with storage and expiry suggestions
 - **AI Receipt Scan** — bulk-add an entire grocery receipt
@@ -28,7 +30,7 @@ FreshGarant helps households stop wasting food and money. Users add groceries by
 
 - **Free**: up to 40 products, barcode scanning, reminders, shopping list, savings tracking
 - **PRO** (€2.99/month or €19.99/year via Google Play): unlimited products, all AI features, Cook Mode with timers, detailed statistics, family sharing, calories and nutrition
-- Every free user gets one lifetime free trial of each AI feature
+- Every free user gets 3 free receipt scans and one lifetime free try of each other AI feature; the monthly PRO plan starts with a 7-day free trial
 
 ## Platforms
 
