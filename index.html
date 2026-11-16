@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>FreshGarant — Food Expiry Tracker &amp; Fridge Inventory App</title>
-<meta name="description" content="Track food expiry dates in your fridge, freezer and pantry. Scan groceries, get reminders before food goes bad and cook what's fresh with AI. Free for Android." />
+<title>FreshGarant — Food Expiry Tracker &amp; Expiry Date Reminder App</title>
+<meta name="description" content="Food expiry tracker for your fridge, freezer and pantry. Get a reminder before food goes bad and reduce food waste. Free for Android." />
 <meta name="theme-color" content="#2E7D32" />
 <link rel="icon" type="image/png" sizes="64x64" href="/assets/icons/icon_favicon_64.png" />
 <link rel="apple-touch-icon" sizes="512x512" href="/assets/icons/icon_512.png" />
@@ -12,18 +12,19 @@
 <link rel="alternate" hreflang="en" href="https://freshgarant.app/" />
 <link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/" />
 <link rel="alternate" hreflang="x-default" href="https://freshgarant.app/" />
-<meta property="og:title" content="FreshGarant — Food Expiry Tracker &amp; Fridge Inventory App" />
-<meta property="og:description" content="Track food expiry dates in your fridge, freezer and pantry. Scan groceries, get reminders before food goes bad and cook what's fresh with AI. Free for Android." />
+<meta property="og:title" content="FreshGarant — Food Expiry Tracker &amp; Expiry Date Reminder App" />
+<meta property="og:description" content="Food expiry tracker for your fridge, freezer and pantry. Get a reminder before food goes bad and reduce food waste. Free for Android." />
 <meta property="og:image" content="https://freshgarant.app/assets/images/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:url" content="https://freshgarant.app/" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="nl_NL" />
 <meta property="og:site_name" content="FreshGarant" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="stylesheet" href="/assets/css/global.css?v=2026110402" />
+<link rel="stylesheet" href="/assets/css/global.css?v=2026111601" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -38,11 +39,42 @@
     "en",
     "nl"
   ],
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "EUR"
-  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Free",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    {
+      "@type": "Offer",
+      "name": "PRO monthly",
+      "price": "2.99",
+      "priceCurrency": "EUR",
+      "category": "subscription",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "2.99",
+        "priceCurrency": "EUR",
+        "billingDuration": "P1M",
+        "unitCode": "MON"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "PRO yearly",
+      "price": "19.99",
+      "priceCurrency": "EUR",
+      "category": "subscription",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "19.99",
+        "priceCurrency": "EUR",
+        "billingDuration": "P1Y",
+        "unitCode": "ANN"
+      }
+    }
+  ],
   "publisher": {
     "@type": "Organization",
     "name": "Grounded Studio",
@@ -132,8 +164,9 @@
 <section class="hero">
   <div class="container hero-inner">
     <div>
-      <span class="section-kicker">FOOD EXPIRY TRACKER FOR ANDROID</span>
-      <h1>Never waste food again.</h1>
+      <span class="section-kicker">FREE APP FOR ANDROID</span>
+      <h1>Food expiry tracker for your fridge, freezer and pantry</h1>
+      <p class="hero-slogan">Never waste food again.</p>
       <p class="lead">FreshGarant tracks the expiry date of everything in your fridge, freezer and pantry, reminds you before food goes bad, and tells you what to cook tonight — one fridge photo, three dinners. Free to start, no account needed.</p>
       <div class="hero-ctas">
         <a href="https://play.google.com/store/apps/details?id=app.rork.versgarant" class="btn btn-primary" target="_blank" rel="noopener">Get it on Google Play →</a>
@@ -304,7 +337,7 @@
       <a class="feature-card blog-card" href="/blog/what-to-cook-with-whats-in-your-fridge.html">
         <span class="section-kicker">COOKING</span>
         <h3>What to Cook Tonight With What&#x27;s in Your Fridge</h3>
-        <p>Standing in front of the fridge with no idea what to make? A simple 3-step method to turn what you have into dinner, plus how one fridge photo gives you 3 ideas.</p>
+        <p>No idea what to make? A simple 3-step method to turn what&#x27;s in your fridge into dinner, plus how one fridge photo gives you 3 ideas.</p>
         <span class="read-more">Read article →</span>
       </a>
       <a class="feature-card blog-card" href="/blog/keep-track-of-food-at-home.html">

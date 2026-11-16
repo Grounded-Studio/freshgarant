@@ -17,8 +17,7 @@ YT = "a66ORi159Go"
 PLAY = "https://play.google.com/store/apps/details?id=app.rork.versgarant"
 
 TITLE = "FreshGarant Video: Never Waste Food Again"
-DESC = ("Watch how FreshGarant tracks the expiry dates in your fridge, freezer and pantry, "
-        "warns you before food goes off and helps you cook with what you already have.")
+DESC = ("Watch how FreshGarant tracks expiry dates in your fridge, freezer and pantry, reminds you before food goes off and helps reduce food waste.")
 
 src = open(os.path.join(ROOT, "download.html"), encoding="utf-8").read()
 css = re.search(r'<link rel="stylesheet" href="(/assets/css/global\.css\?v=\d+)"', src).group(1)
@@ -59,6 +58,7 @@ page = f"""<!doctype html>
 <meta property="og:description" content="{DESC}" />
 <meta property="og:image" content="{SITE}/assets/images/video-thumb-1280.webp?v=20261114" />
 <meta property="og:type" content="video.other" />
+<meta property="og:locale" content="en_US" />
 <meta property="og:video" content="https://www.youtube.com/embed/{YT}" />
 <meta property="og:site_name" content="FreshGarant" />
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />

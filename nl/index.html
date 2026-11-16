@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>FreshGarant — Houdbaarheid App &amp; Voorraad Bijhouden</title>
-<meta name="description" content="Houd de houdbaarheidsdatum bij van alles in je koelkast, vriezer en voorraadkast. Krijg een seintje vóór iets bederft en kook met AI. Gratis voor Android." />
+<title>FreshGarant — Houdbaarheid Bijhouden &amp; THT-datum App</title>
+<meta name="description" content="Houdbaarheid bijhouden van je koelkast, vriezer en voorraadkast. Een seintje vóór de THT-datum, minder voedselverspilling. Gratis app." />
 <meta name="theme-color" content="#2E7D32" />
 <link rel="icon" type="image/png" sizes="64x64" href="/assets/icons/icon_favicon_64.png" />
 <link rel="apple-touch-icon" sizes="512x512" href="/assets/icons/icon_512.png" />
@@ -12,15 +12,16 @@
 <link rel="alternate" hreflang="en" href="https://freshgarant.app/" />
 <link rel="alternate" hreflang="nl" href="https://freshgarant.app/nl/" />
 <link rel="alternate" hreflang="x-default" href="https://freshgarant.app/" />
-<meta property="og:title" content="FreshGarant — Houdbaarheid App &amp; Voorraad Bijhouden" />
-<meta property="og:description" content="Houd de houdbaarheidsdatum bij van alles in je koelkast, vriezer en voorraadkast. Krijg een seintje vóór iets bederft en kook met AI. Gratis voor Android." />
+<meta property="og:title" content="FreshGarant — Houdbaarheid Bijhouden &amp; THT-datum App" />
+<meta property="og:description" content="Houdbaarheid bijhouden van je koelkast, vriezer en voorraadkast. Een seintje vóór de THT-datum, minder voedselverspilling. Gratis app." />
 <meta property="og:image" content="https://freshgarant.app/assets/images/og-image.jpg" />
 <meta property="og:url" content="https://freshgarant.app/nl/" />
 <meta property="og:type" content="website" />
 <meta property="og:locale" content="nl_NL" />
+<meta property="og:locale:alternate" content="en_US" />
 <meta property="og:site_name" content="FreshGarant" />
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="stylesheet" href="/assets/css/global.css?v=2026110402" />
+<link rel="stylesheet" href="/assets/css/global.css?v=2026111601" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -35,11 +36,42 @@
     "en",
     "nl"
   ],
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "EUR"
-  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Gratis",
+      "price": "0",
+      "priceCurrency": "EUR"
+    },
+    {
+      "@type": "Offer",
+      "name": "PRO per maand",
+      "price": "2.99",
+      "priceCurrency": "EUR",
+      "category": "subscription",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "2.99",
+        "priceCurrency": "EUR",
+        "billingDuration": "P1M",
+        "unitCode": "MON"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "PRO per jaar",
+      "price": "19.99",
+      "priceCurrency": "EUR",
+      "category": "subscription",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "19.99",
+        "priceCurrency": "EUR",
+        "billingDuration": "P1Y",
+        "unitCode": "ANN"
+      }
+    }
+  ],
   "publisher": {
     "@type": "Organization",
     "name": "Grounded Studio",
@@ -116,8 +148,9 @@
 <section class="hero">
   <div class="container hero-inner">
     <div>
-      <span class="section-kicker">HOUDBAARHEID APP VOOR ANDROID</span>
-      <h1>Nooit meer eten weggooien.</h1>
+      <span class="section-kicker">GRATIS APP VOOR ANDROID</span>
+      <h1>Houdbaarheid bijhouden van alles in je koelkast, vriezer en voorraadkast</h1>
+      <p class="hero-slogan">Nooit meer eten weggooien.</p>
       <p class="lead">FreshGarant houdt de houdbaarheidsdatum bij van alles in je koelkast, vriezer en voorraadkast, waarschuwt je voordat iets bederft en zegt wat je vanavond eet — één koelkastfoto, drie gerechten. Gratis starten, geen account nodig.</p>
       <div class="hero-ctas">
         <a href="https://play.google.com/store/apps/details?id=app.rork.versgarant" class="btn btn-primary" target="_blank" rel="noopener">Ontdek het op Google Play →</a>
@@ -261,7 +294,7 @@
       <a class="feature-card blog-card" href="/nl/blog/wat-eet-ik-vanavond-koken-met-wat-je-hebt.html">
         <span class="section-kicker">KOKEN</span>
         <h3>Wat eet ik vanavond? Koken met wat je in huis hebt</h3>
-        <p>Voor de koelkast staan zonder idee wat je moet maken? Een simpele methode in 3 stappen om van wat je hebt een avondeten te maken, plus hoe één koelkastfoto je 3 ideeën geeft.</p>
+        <p>Geen idee wat je vanavond eet? In 3 stappen maak je van wat je in huis hebt een avondeten, en één koelkastfoto geeft je 3 ideeën.</p>
         <span class="read-more">Lees artikel →</span>
       </a>
       <a class="feature-card blog-card" href="/nl/blog/overzicht-voorraad-thuis-bijhouden.html">
@@ -273,19 +306,19 @@
       <a class="feature-card blog-card" href="/nl/blog/boodschappen-invoeren-in-een-minuut.html">
         <span class="section-kicker">ZO WERKT HET</span>
         <h3>4 manieren om je boodschappen in een minuut in te voeren</h3>
-        <p>Elk product intypen in een app duurt te lang. Bon scannen, koelkastfoto, barcode en snel toevoegen: welke methode is het snelst voor welke boodschappen.</p>
+        <p>Elk product intypen duurt te lang. Bon scannen, koelkastfoto, barcode of snel toevoegen: welke methode is het snelst voor welke boodschappen?</p>
         <span class="read-more">Lees artikel →</span>
       </a>
       <a class="feature-card blog-card" href="/nl/blog/tht-tgt-verschil.html">
         <span class="section-kicker">ETIKETTEN</span>
         <h3>THT en TGT: wat is het verschil?</h3>
-        <p>Tenminste houdbaar tot gaat over kwaliteit, te gebruiken tot over veiligheid. Wat de data op je eten betekenen en wanneer je iets na de datum nog kunt eten.</p>
+        <p>THT gaat over kwaliteit, TGT over veiligheid. Wat de data op je eten betekenen en wanneer je iets na de datum nog kunt eten.</p>
         <span class="read-more">Lees artikel →</span>
       </a>
       <a class="feature-card blog-card" href="/nl/blog/hoe-lang-houdbaar-koelkast.html">
         <span class="section-kicker">BEWAREN</span>
         <h3>Hoe lang is eten houdbaar in de koelkast? (Tabel)</h3>
-        <p>Hoeveel dagen kip, gehakt, vis, restjes, melk, kaas en meer goed blijven in de koelkast — in één duidelijke tabel, plus tips om eten langer goed te houden.</p>
+        <p>Hoeveel dagen kip, gehakt, vis, restjes, melk en kaas goed blijven in de koelkast, in één tabel, plus tips om eten langer goed te houden.</p>
         <span class="read-more">Lees artikel →</span>
       </a>
       <a class="feature-card blog-card" href="/nl/blog/wat-kun-je-invriezen.html">

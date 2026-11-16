@@ -54,7 +54,7 @@ ARTICLES = [
     "nl": {
       "slug": "tht-tgt-verschil",
       "title": "THT en TGT: wat is het verschil?",
-      "desc": "Tenminste houdbaar tot gaat over kwaliteit, te gebruiken tot over veiligheid. Wat de data op je eten betekenen en wanneer je iets na de datum nog kunt eten.",
+      "desc": "THT gaat over kwaliteit, TGT over veiligheid. Wat de data op je eten betekenen en wanneer je iets na de datum nog kunt eten.",
       "kicker": "ETIKETTEN",
       "intro": "Twee data, twee heel verschillende betekenissen. Ze door elkaar halen is een van de grootste redenen dat goed eten in de prullenbak belandt — en soms dat bedorven eten dat níet doet.",
       "body": """
@@ -162,7 +162,7 @@ ARTICLES = [
     "nl": {
       "slug": "hoe-lang-houdbaar-koelkast",
       "title": "Hoe lang is eten houdbaar in de koelkast? (Tabel)",
-      "desc": "Hoeveel dagen kip, gehakt, vis, restjes, melk, kaas en meer goed blijven in de koelkast — in één duidelijke tabel, plus tips om eten langer goed te houden.",
+      "desc": "Hoeveel dagen kip, gehakt, vis, restjes, melk en kaas goed blijven in de koelkast, in één tabel, plus tips om eten langer goed te houden.",
       "kicker": "BEWAREN",
       "intro": "De datum op de verpakking is één ding — maar hoe lang is die kipfilet goed als hij eenmaal in je koelkast ligt, of de restjes van gisteravond? Hier een duidelijke, voorzichtige tabel.",
       "body": """
@@ -379,7 +379,7 @@ ARTICLES = [
     "nl": {
       "slug": "voedselverspilling-tegengaan-tips",
       "title": "Voedselverspilling tegengaan: 10 tips voor thuis",
-      "desc": "Tien praktische tips om minder eten weg te gooien en geld te besparen: slimmer boodschappen doen, beter bewaren, koken met restjes en weten wat er in je koelkast ligt.",
+      "desc": "Voedselverspilling tegengaan begint thuis. 10 praktische tips: slimmer boodschappen doen, beter bewaren en koken met restjes.",
       "kicker": "TIPS",
       "intro": "Volgens het Voedingscentrum gooit iedere Nederlander zo'n 34 kilo eten per jaar weg. Het meeste daarvan is eten dat ongemerkt over de datum ging. Deze tien gewoontes maken het grootste verschil.",
       "body": """

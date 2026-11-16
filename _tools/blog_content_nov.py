@@ -10,7 +10,7 @@ ARTICLES_NOV = [
       "slug": "what-to-cook-with-whats-in-your-fridge",
       "date": "5 November 2026",
       "title": "What to Cook Tonight With What's in Your Fridge",
-      "desc": "Standing in front of the fridge with no idea what to make? A simple 3-step method to turn what you have into dinner, plus how one fridge photo gives you 3 ideas.",
+      "desc": "No idea what to make? A simple 3-step method to turn what's in your fridge into dinner, plus how one fridge photo gives you 3 ideas.",
       "kicker": "COOKING",
       "intro": "It's six o'clock, the fridge is half full and nothing looks like a meal. Most of the food we waste dies right here: not because there was nothing to eat, but because nobody saw the dinner in it.",
       "body": """
@@ -56,7 +56,7 @@ ARTICLES_NOV = [
       "slug": "wat-eet-ik-vanavond-koken-met-wat-je-hebt",
       "date": "5 november 2026",
       "title": "Wat eet ik vanavond? Koken met wat je in huis hebt",
-      "desc": "Voor de koelkast staan zonder idee wat je moet maken? Een simpele methode in 3 stappen om van wat je hebt een avondeten te maken, plus hoe één koelkastfoto je 3 ideeën geeft.",
+      "desc": "Geen idee wat je vanavond eet? In 3 stappen maak je van wat je in huis hebt een avondeten, en één koelkastfoto geeft je 3 ideeën.",
       "kicker": "KOKEN",
       "intro": "Het is zes uur, de koelkast is half vol en niets lijkt op een maaltijd. Precies hier sneuvelt het meeste eten: niet omdat er niets te eten was, maar omdat niemand er een gerecht in zag.",
       "body": """
@@ -228,7 +228,7 @@ ARTICLES_NOV = [
       "slug": "boodschappen-invoeren-in-een-minuut",
       "date": "5 november 2026",
       "title": "4 manieren om je boodschappen in een minuut in te voeren",
-      "desc": "Elk product intypen in een app duurt te lang. Bon scannen, koelkastfoto, barcode en snel toevoegen: welke methode is het snelst voor welke boodschappen.",
+      "desc": "Elk product intypen duurt te lang. Bon scannen, koelkastfoto, barcode of snel toevoegen: welke methode is het snelst voor welke boodschappen?",
       "kicker": "ZO WERKT HET",
       "intro": "Een houdbaarheids-app helpt alleen als je eten er ook echt in staat. En niemand heeft zin om na een grote boodschappenronde twintig producten in te typen. Hier zijn vier manieren om je boodschappen snel in te voeren, en wanneer je welke gebruikt.",
       "body": """

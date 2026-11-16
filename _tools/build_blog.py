@@ -15,7 +15,7 @@ from blog_content import ARTICLES, PUBLISHED  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://freshgarant.app"
-CSS_V = "2026110501"
+CSS_V = "2026111601"
 PLAY = "https://play.google.com/store/apps/details?id=app.rork.versgarant"
 
 T = {
@@ -91,6 +91,8 @@ def head(lang, title, desc, path_en, path_nl, og_type, ld):
 <meta property="og:url" content="{SITE}{path}" />
 <meta property="og:image" content="{SITE}/assets/images/og-image.jpg" />
 <meta property="og:type" content="{og_type}" />
+<meta property="og:locale" content="{"en_US" if lang == "en" else "nl_NL"}" />
+<meta property="og:locale:alternate" content="{"nl_NL" if lang == "en" else "en_US"}" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="stylesheet" href="/assets/css/global.css?v={CSS_V}" />
