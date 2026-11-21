@@ -109,14 +109,14 @@ ARTICLES = [
 <table>
   <thead><tr><th>Product</th><th>In the fridge</th></tr></thead>
   <tbody>
-    <tr><td>Minced meat (raw)</td><td>1 day</td></tr>
-    <tr><td>Fresh fish (raw)</td><td>1 day</td></tr>
-    <tr><td>Chicken and other poultry (raw)</td><td>1–2 days</td></tr>
+    <tr><td><a href="/guides/how-long-does-mince-last.html">Minced meat (raw)</a></td><td>1 day</td></tr>
+    <tr><td><a href="/guides/how-long-does-fish-last.html">Fresh fish (raw)</a></td><td>1 day</td></tr>
+    <tr><td><a href="/guides/how-long-does-chicken-last.html">Chicken and other poultry (raw)</a></td><td>1–2 days</td></tr>
     <tr><td>Steak, pork chops (raw)</td><td>2–3 days</td></tr>
-    <tr><td>Sliced deli meat, once opened</td><td>2–3 days</td></tr>
-    <tr><td>Leftovers and home-cooked meals</td><td>max. 2 days</td></tr>
-    <tr><td>Cooked rice</td><td>1 day — cool it quickly</td></tr>
-    <tr><td>Homemade soup</td><td>2 days</td></tr>
+    <tr><td><a href="/guides/how-long-does-ham-last.html">Sliced deli meat, once opened</a></td><td>2–3 days</td></tr>
+    <tr><td><a href="/guides/how-long-do-leftovers-last.html">Leftovers and home-cooked meals</a></td><td>max. 2 days</td></tr>
+    <tr><td><a href="/guides/how-long-does-cooked-rice-last.html">Cooked rice</a></td><td>1 day — cool it quickly</td></tr>
+    <tr><td><a href="/guides/how-long-does-soup-last.html">Homemade soup</a></td><td>2 days</td></tr>
   </tbody>
 </table>
 
@@ -124,12 +124,12 @@ ARTICLES = [
 <table>
   <thead><tr><th>Product</th><th>In the fridge</th></tr></thead>
   <tbody>
-    <tr><td>Milk, once opened</td><td>3–4 days</td></tr>
-    <tr><td>Yogurt, once opened</td><td>3–5 days</td></tr>
+    <tr><td><a href="/guides/how-long-does-milk-last.html">Milk, once opened</a></td><td>3–4 days</td></tr>
+    <tr><td><a href="/guides/how-long-does-yoghurt-last.html">Yogurt, once opened</a></td><td>3–5 days</td></tr>
     <tr><td>Soft cheese (brie, mozzarella)</td><td>about 1 week, or per pack</td></tr>
-    <tr><td>Hard cheese, wrapped</td><td>3–4 weeks</td></tr>
+    <tr><td><a href="/guides/how-long-does-cheese-last.html">Hard cheese, wrapped</a></td><td>3–4 weeks</td></tr>
     <tr><td>Butter</td><td>until the best before date</td></tr>
-    <tr><td>Eggs</td><td>until the best before date</td></tr>
+    <tr><td><a href="/guides/how-long-do-eggs-last.html">Eggs</a></td><td>until the best before date</td></tr>
   </tbody>
 </table>
 
@@ -138,7 +138,7 @@ ARTICLES = [
   <thead><tr><th>Product</th><th>In the fridge</th></tr></thead>
   <tbody>
     <tr><td>Cut fruit and vegetables</td><td>2–3 days</td></tr>
-    <tr><td>Bagged salad, once opened</td><td>1–2 days</td></tr>
+    <tr><td><a href="/guides/how-long-does-lettuce-last.html">Bagged salad, once opened</a></td><td>1–2 days</td></tr>
     <tr><td>Leafy greens (spinach, lettuce)</td><td>3–5 days</td></tr>
     <tr><td>Broccoli, courgette, peppers</td><td>about 1 week</td></tr>
     <tr><td>Carrots</td><td>2–3 weeks</td></tr>
@@ -172,14 +172,14 @@ ARTICLES = [
 <table>
   <thead><tr><th>Product</th><th>In de koelkast</th></tr></thead>
   <tbody>
-    <tr><td>Gehakt (rauw)</td><td>1 dag</td></tr>
-    <tr><td>Verse vis (rauw)</td><td>1 dag</td></tr>
-    <tr><td>Kip en ander gevogelte (rauw)</td><td>1–2 dagen</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-gehakt-houdbaar.html">Gehakt (rauw)</a></td><td>1 dag</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-vis-houdbaar.html">Verse vis (rauw)</a></td><td>1 dag</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-kip-houdbaar.html">Kip en ander gevogelte (rauw)</a></td><td>1–2 dagen</td></tr>
     <tr><td>Biefstuk, karbonade (rauw)</td><td>2–3 dagen</td></tr>
-    <tr><td>Vleeswaren, na openen</td><td>2–3 dagen</td></tr>
-    <tr><td>Restjes en zelfgekookte maaltijden</td><td>max. 2 dagen</td></tr>
-    <tr><td>Gekookte rijst</td><td>1 dag — snel laten afkoelen</td></tr>
-    <tr><td>Zelfgemaakte soep</td><td>2 dagen</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-zijn-vleeswaren-houdbaar.html">Vleeswaren, na openen</a></td><td>2–3 dagen</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-zijn-restjes-houdbaar.html">Restjes en zelfgekookte maaltijden</a></td><td>max. 2 dagen</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-gekookte-rijst-houdbaar.html">Gekookte rijst</a></td><td>1 dag — snel laten afkoelen</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-soep-houdbaar.html">Zelfgemaakte soep</a></td><td>2 dagen</td></tr>
   </tbody>
 </table>
 
@@ -187,12 +187,12 @@ ARTICLES = [
 <table>
   <thead><tr><th>Product</th><th>In de koelkast</th></tr></thead>
   <tbody>
-    <tr><td>Melk, na openen</td><td>3–4 dagen</td></tr>
-    <tr><td>Yoghurt, na openen</td><td>3–5 dagen</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-melk-houdbaar.html">Melk, na openen</a></td><td>3–4 dagen</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-yoghurt-houdbaar.html">Yoghurt, na openen</a></td><td>3–5 dagen</td></tr>
     <tr><td>Zachte kaas (brie, mozzarella)</td><td>ongeveer 1 week, of volgens verpakking</td></tr>
-    <tr><td>Harde kaas, verpakt</td><td>3–4 weken</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-kaas-houdbaar.html">Harde kaas, verpakt</a></td><td>3–4 weken</td></tr>
     <tr><td>Roomboter</td><td>tot de THT-datum</td></tr>
-    <tr><td>Eieren</td><td>tot de THT-datum</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-zijn-eieren-houdbaar.html">Eieren</a></td><td>tot de THT-datum</td></tr>
   </tbody>
 </table>
 
@@ -201,7 +201,7 @@ ARTICLES = [
   <thead><tr><th>Product</th><th>In de koelkast</th></tr></thead>
   <tbody>
     <tr><td>Gesneden groente en fruit</td><td>2–3 dagen</td></tr>
-    <tr><td>Zak sla, na openen</td><td>1–2 dagen</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-sla-houdbaar.html">Zak sla, na openen</a></td><td>1–2 dagen</td></tr>
     <tr><td>Bladgroente (spinazie, sla)</td><td>3–5 dagen</td></tr>
     <tr><td>Broccoli, courgette, paprika</td><td>ongeveer 1 week</td></tr>
     <tr><td>Wortels</td><td>2–3 weken</td></tr>
@@ -238,15 +238,15 @@ ARTICLES = [
 <table>
   <thead><tr><th>Product</th><th>In the freezer</th></tr></thead>
   <tbody>
-    <tr><td>Bread and rolls</td><td>up to 3 months</td></tr>
-    <tr><td>Minced meat, sausages</td><td>up to 3 months</td></tr>
-    <tr><td>Chicken and other poultry</td><td>up to 6 months</td></tr>
+    <tr><td><a href="/guides/how-long-does-bread-last.html">Bread and rolls</a></td><td>up to 3 months</td></tr>
+    <tr><td><a href="/guides/how-long-does-mince-last.html">Minced meat, sausages</a></td><td>up to 3 months</td></tr>
+    <tr><td><a href="/guides/how-long-does-chicken-last.html">Chicken and other poultry</a></td><td>up to 6 months</td></tr>
     <tr><td>Beef and pork (lean)</td><td>6–9 months</td></tr>
-    <tr><td>Fatty fish (salmon, mackerel)</td><td>2–3 months</td></tr>
+    <tr><td><a href="/guides/how-long-does-fish-last.html">Fatty fish (salmon, mackerel)</a></td><td>2–3 months</td></tr>
     <tr><td>Lean fish (cod, pollock)</td><td>up to 6 months</td></tr>
-    <tr><td>Cooked meals, soups, sauces</td><td>2–3 months</td></tr>
+    <tr><td><a href="/guides/how-long-does-soup-last.html">Cooked meals, soups, sauces</a></td><td>2–3 months</td></tr>
     <tr><td>Butter</td><td>up to 6 months</td></tr>
-    <tr><td>Grated hard cheese</td><td>up to 3 months</td></tr>
+    <tr><td><a href="/guides/how-long-does-cheese-last.html">Grated hard cheese</a></td><td>up to 3 months</td></tr>
     <tr><td>Vegetables (blanched)</td><td>8–12 months</td></tr>
     <tr><td>Fruit (berries, banana slices)</td><td>8–12 months</td></tr>
   </tbody>
@@ -294,15 +294,15 @@ ARTICLES = [
 <table>
   <thead><tr><th>Product</th><th>In de vriezer</th></tr></thead>
   <tbody>
-    <tr><td>Brood en broodjes</td><td>tot 3 maanden</td></tr>
-    <tr><td>Gehakt, worst</td><td>tot 3 maanden</td></tr>
-    <tr><td>Kip en ander gevogelte</td><td>tot 6 maanden</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-brood-houdbaar.html">Brood en broodjes</a></td><td>tot 3 maanden</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-gehakt-houdbaar.html">Gehakt, worst</a></td><td>tot 3 maanden</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-kip-houdbaar.html">Kip en ander gevogelte</a></td><td>tot 6 maanden</td></tr>
     <tr><td>Rund- en varkensvlees (mager)</td><td>6–9 maanden</td></tr>
-    <tr><td>Vette vis (zalm, makreel)</td><td>2–3 maanden</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-vis-houdbaar.html">Vette vis (zalm, makreel)</a></td><td>2–3 maanden</td></tr>
     <tr><td>Magere vis (kabeljauw, koolvis)</td><td>tot 6 maanden</td></tr>
-    <tr><td>Gekookte maaltijden, soep, saus</td><td>2–3 maanden</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-soep-houdbaar.html">Gekookte maaltijden, soep, saus</a></td><td>2–3 maanden</td></tr>
     <tr><td>Roomboter</td><td>tot 6 maanden</td></tr>
-    <tr><td>Geraspte harde kaas</td><td>tot 3 maanden</td></tr>
+    <tr><td><a href="/nl/gidsen/hoe-lang-is-kaas-houdbaar.html">Geraspte harde kaas</a></td><td>tot 3 maanden</td></tr>
     <tr><td>Groente (geblancheerd)</td><td>8–12 maanden</td></tr>
     <tr><td>Fruit (bessen, plakjes banaan)</td><td>8–12 maanden</td></tr>
   </tbody>
