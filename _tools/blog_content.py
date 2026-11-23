@@ -361,6 +361,13 @@ ARTICLES = [
   <li><strong>Store food in the right place.</strong> Some things last longer outside the fridge, others only inside it. <a href="/blog/how-long-does-food-last-in-the-fridge.html">See the fridge chart</a>.</li>
   <li><strong>Freeze in time.</strong> Bread, meat and leftovers can almost all go in the freezer before they expire. <a href="/blog/what-food-can-you-freeze.html">What you can freeze</a>.</li>
 </ol>
+<p>The products that most often go off unnoticed each have their own storage guide:</p>
+<ul>
+  <li><a href="/guides/how-long-do-bananas-last.html">Bananas</a>, <a href="/guides/how-long-do-strawberries-last.html">strawberries</a> and <a href="/guides/how-long-do-avocados-last.html">avocados</a></li>
+  <li><a href="/guides/how-long-do-tomatoes-last.html">Tomatoes</a> and <a href="/guides/how-long-do-potatoes-last.html">potatoes</a></li>
+  <li><a href="/guides/how-long-does-whipping-cream-last.html">Whipping cream</a> and <a href="/guides/how-long-does-cooked-pasta-last.html">cooked pasta</a></li>
+</ul>
+<p>Or browse <a href="/guides/">all storage guides</a>.</p>
 
 <h2>In the kitchen</h2>
 <ol start="8">
@@ -397,6 +404,13 @@ ARTICLES = [
   <li><strong>Bewaar eten op de juiste plek.</strong> Sommige producten blijven buiten de koelkast langer goed, andere alleen erin. <a href="/nl/blog/hoe-lang-houdbaar-koelkast.html">Bekijk de koelkasttabel</a>.</li>
   <li><strong>Vries op tijd in.</strong> Brood, vlees en restjes kunnen bijna allemaal de vriezer in vóór ze verlopen. <a href="/nl/blog/wat-kun-je-invriezen.html">Wat je kunt invriezen</a>.</li>
 </ol>
+<p>De producten die het vaakst ongemerkt bederven, hebben elk een eigen bewaargids:</p>
+<ul>
+  <li><a href="/nl/gidsen/hoe-lang-zijn-bananen-houdbaar.html">Bananen</a>, <a href="/nl/gidsen/hoe-lang-zijn-aardbeien-houdbaar.html">aardbeien</a> en <a href="/nl/gidsen/hoe-lang-is-avocado-houdbaar.html">avocado</a></li>
+  <li><a href="/nl/gidsen/hoe-lang-zijn-tomaten-houdbaar.html">Tomaten</a> en <a href="/nl/gidsen/hoe-lang-zijn-aardappelen-houdbaar.html">aardappelen</a></li>
+  <li><a href="/nl/gidsen/hoe-lang-is-slagroom-houdbaar.html">Slagroom</a> en <a href="/nl/gidsen/hoe-lang-is-gekookte-pasta-houdbaar.html">gekookte pasta</a></li>
+</ul>
+<p>Of bekijk <a href="/nl/gidsen/">alle bewaargidsen</a>.</p>
 
 <h2>In de keuken</h2>
 <ol start="8">
