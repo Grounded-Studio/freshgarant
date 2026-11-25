@@ -209,3 +209,8 @@ def home_block():
 
 if __name__ == "__main__":
     main()
+    # Cross-promo block for the other Grounded Studio apps (re-added after every build).
+    import subprocess, sys
+    _xp = r"C:\meten_weten_bouw\scripts\cross_promo.py"
+    if os.path.exists(_xp):
+        subprocess.run([sys.executable, "-I", _xp, "freshgarant"], check=False)

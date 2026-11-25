@@ -105,3 +105,9 @@ page = f"""<!doctype html>
 with open(os.path.join(ROOT, "video.html"), "w", encoding="utf-8", newline="\n") as f:
     f.write(page)
 print("wrote video.html")
+
+# Cross-promo block for the other Grounded Studio apps (re-added after every build).
+import subprocess as _sp, sys as _sys, os as _os  # noqa: E402
+_XP = r"C:\meten_weten_bouw\scripts\cross_promo.py"
+if _os.path.exists(_XP):
+    _sp.run([_sys.executable, "-I", _XP, "freshgarant"], check=False)
