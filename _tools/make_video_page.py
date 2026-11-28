@@ -13,11 +13,14 @@ import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://freshgarant.app"
-YT = "a66ORi159Go"
+YT = "qDHaiyUZwjI"             # main video: 2.2.9, everything new (2026-11-23)
+YT_OLD = "a66ORi159Go"         # earlier promo, kept below the main video
 PLAY = "https://play.google.com/store/apps/details?id=app.rork.versgarant"
 
-TITLE = "FreshGarant Video: Never Waste Food Again"
-DESC = ("Watch how FreshGarant tracks expiry dates in your fridge, freezer and pantry, reminds you before food goes off and helps reduce food waste.")
+TITLE = "FreshGarant Video: How Long Does Food Keep? Everything New"
+DESC = ("Watch how FreshGarant fills in how long food keeps, moves the date when you open something and freezes "
+        "what expires today with one tap. Plus storage guides, leftovers, your week in one card and backups.")
+THUMB = "/assets/images/video-new-thumb-1280.webp?v=20261128"
 
 src = open(os.path.join(ROOT, "download.html"), encoding="utf-8").read()
 css = re.search(r'<link rel="stylesheet" href="(/assets/css/global\.css\?v=\d+)"', src).group(1)
@@ -30,10 +33,10 @@ beacon = re.search(r"<!-- Cloudflare Web Analytics -->.*?<!-- End Cloudflare Web
 
 video_ld = {
     "@context": "https://schema.org", "@type": "VideoObject",
-    "name": "FreshGarant – Never Waste Food Again | Expiry Tracker, AI Recipes & Meal Planner",
+    "name": "How long does food keep? FreshGarant 2.2.9 – everything new",
     "description": DESC,
-    "thumbnailUrl": [f"{SITE}/assets/images/video-thumb-1280.webp?v=20261114", f"https://i.ytimg.com/vi/{YT}/maxresdefault.jpg"],
-    "uploadDate": "2026-11-12T13:52:30-08:00", "duration": "PT1M39S",
+    "thumbnailUrl": [f"{SITE}{THUMB}", f"https://i.ytimg.com/vi/{YT}/maxresdefault.jpg"],
+    "uploadDate": "2026-11-23T15:25:55-08:00", "duration": "PT1M55S",
     "embedUrl": f"https://www.youtube-nocookie.com/embed/{YT}",
     "contentUrl": f"https://www.youtube.com/watch?v={YT}",
     "publisher": {"@type": "Organization", "name": "Grounded Studio", "url": "https://grounded-studio.app/",
@@ -56,7 +59,7 @@ page = f"""<!doctype html>
 <link rel="canonical" href="{SITE}/video.html" />
 <meta property="og:title" content="{TITLE}" />
 <meta property="og:description" content="{DESC}" />
-<meta property="og:image" content="{SITE}/assets/images/video-thumb-1280.webp?v=20261114" />
+<meta property="og:image" content="{SITE}{THUMB}" />
 <meta property="og:type" content="video.other" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:video" content="https://www.youtube.com/embed/{YT}" />
@@ -74,9 +77,9 @@ page = f"""<!doctype html>
 <section class="section video-section">
   <div class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><span aria-current="page">Video</span></li></ol></nav>
-    <h1 class="section-title" style="text-align:center;">Never waste food again</h1>
+    <h1 class="section-title" style="text-align:center;">How long does food keep?</h1>
     <div class="yt-video" style="margin-top: 28px;">
-      <iframe src="https://www.youtube-nocookie.com/embed/{YT}?rel=0" title="FreshGarant: never waste food again" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="eager"></iframe>
+      <iframe src="https://www.youtube-nocookie.com/embed/{YT}?rel=0" title="How long does food keep? FreshGarant 2.2.9, everything new" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="eager"></iframe>
     </div>
     <p class="yt-note">Plays from YouTube in privacy-enhanced mode. <a href="https://www.youtube.com/watch?v={YT}" target="_blank" rel="noopener">Watch on YouTube</a></p>
 
@@ -84,12 +87,18 @@ page = f"""<!doctype html>
       <h2>What you'll see</h2>
       <p>{DESC}</p>
       <ul>
-        <li><strong>Use these first:</strong> the home screen shows what expires today, tomorrow and this week.</li>
-        <li><strong>My kitchen:</strong> your fridge, freezer and pantry at a glance.</li>
-        <li><strong>Add in seconds:</strong> quick add, receipt scan, barcode or one photo of your fridge.</li>
-        <li><strong>Cook what needs to go:</strong> AI recipes and a weekly meal plan built from your own stock.</li>
-        <li><strong>Smart shopping list</strong> that knows what's already at home, and a running total of what you save.</li>
+        <li><strong>Shelf life, filled in:</strong> type what it is and FreshGarant fills in how long it keeps, also without a date on the pack.</li>
+        <li><strong>Opened something?</strong> The date moves along by itself.</li>
+        <li><strong>Expires today?</strong> Freeze it with one tap, with the right new date.</li>
+        <li><strong>How long does it keep?</strong> On every product, with a link to the <a href="/guides/">storage guide</a>.</li>
+        <li><strong>Leftovers, your week and backups:</strong> save dinner leftovers in one tap, get your week in one card every Sunday and take everything to a new phone.</li>
+        <li><strong>What's for dinner?</strong> One fridge photo, three dinners with what you already have.</li>
       </ul>
+      <h2>Earlier video: never waste food again</h2>
+      <p>The full tour: use these first, your kitchen at a glance, adding in seconds, AI recipes, the weekly meal plan and the smart shopping list.</p>
+      <div class="yt-video" style="margin: 18px 0 8px;">
+        <iframe src="https://www.youtube-nocookie.com/embed/{YT_OLD}?rel=0" title="FreshGarant: never waste food again" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
       <p><a class="btn btn-primary" href="{PLAY}" target="_blank" rel="noopener" style="color:#fff; text-decoration:none;">Download FreshGarant free →</a></p>
     </div>
   </div>
