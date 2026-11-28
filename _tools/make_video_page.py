@@ -14,7 +14,6 @@ import re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://freshgarant.app"
 YT = "qDHaiyUZwjI"             # main video: 2.2.9, everything new (2026-11-23)
-YT_OLD = "a66ORi159Go"         # earlier promo, kept below the main video
 PLAY = "https://play.google.com/store/apps/details?id=app.rork.versgarant"
 
 TITLE = "FreshGarant Video: How Long Does Food Keep? Everything New"
@@ -94,11 +93,6 @@ page = f"""<!doctype html>
         <li><strong>Leftovers, your week and backups:</strong> save dinner leftovers in one tap, get your week in one card every Sunday and take everything to a new phone.</li>
         <li><strong>What's for dinner?</strong> One fridge photo, three dinners with what you already have.</li>
       </ul>
-      <h2>Earlier video: never waste food again</h2>
-      <p>The full tour: use these first, your kitchen at a glance, adding in seconds, AI recipes, the weekly meal plan and the smart shopping list.</p>
-      <div class="yt-video" style="margin: 18px 0 8px;">
-        <iframe src="https://www.youtube-nocookie.com/embed/{YT_OLD}?rel=0" title="FreshGarant: never waste food again" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-      </div>
       <p><a class="btn btn-primary" href="{PLAY}" target="_blank" rel="noopener" style="color:#fff; text-decoration:none;">Download FreshGarant free →</a></p>
     </div>
   </div>
